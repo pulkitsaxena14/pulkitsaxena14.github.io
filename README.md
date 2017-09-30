@@ -1,9 +1,7 @@
 <html>
  <head>
-  <meta http-equiv="refresh" content="0;URL='https://pulkitsaxena14.github.io/my_website/'" />
   <style>
-    @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
-body {
+   body {
   background-color: #f1c40f;
   overflow: hidden;
 }
@@ -257,8 +255,7 @@ h1 {
 }
 </style>
 </head>
-<body>
-<div class='body'>
+   <div class='body'>
   <span>
     <span></span>
     <span></span>
@@ -277,5 +274,4 @@ h1 {
   <span></span>
 </div>
 <h1>Redirecting</h1>
-</body>
 </html>
