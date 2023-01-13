@@ -1,50 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Personal Website</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+
+<head>
+  <title>Pulkit Saxena - Data Scientist</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+  <header class="header-section">
+    <div class="header-bg" style="background-image: url(header.png);"></div>
+    <div class="header-text py-3">
+      <h1 class="text-white">Pulkit Saxena</h1>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </div>
+  </nav>
+  <section class="container my-5" id="about">
+    <h1 class="text-center">About Me</h1>
+    <div class="row">
+      <div class="col-lg-3 text-center">
+        <img src="profile_picture.jpg" alt="profile picture" class="img-thumbnail">
+      </div>
+      <div class="col-lg-9">
+        <p>I am a data scientist with a Master's degree in Data Science. I have experience in credit risk analysis
+          and
+          forecasting. I have gained valuable experience working as a Business Analyst and Data Engineer at
+          RedCarpetUp.com, where I developed a model that predicted the risk, income, and utilization of the
+          customers
+          which helped boost credit disbursals. I am proficient in programming languages such as Python, SQL, and
+          have
+          experience with data analysis tools such as Pandas, Numpy, and Matplotlib. I am open to new opportunities
+          and
+          would be happy to discuss how I can contribute to your organization. You can contact me at <a
+            href="mailto:ps6104@rit.edu">ps6104@rit.edu</a> or visit my LinkedIn profile at <a
+            href="https://linkedin.com/in/pulkitsaxena14">linkedin.com/in/pulkitsaxena14</a></p>
+      </div>
+    </div>
+  </section>
 
-    <section id="about">
-      <h1>About Me</h1>
-      <p>This is a short blurb about yourself and your background.</p>
-    </section>
+  <footer id="footer" class="bg-primary text-white text-center py-3">
+    <p>Copyright ©2022 Pulkit Saxena</p>
+  </footer>
 
-    <section id="resume">
-      <h1>My Resume</h1>
-      <p>
-      <a href="resume.pdf">Download my resume</a>
-      </p>
-    </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
 
-    <section id="projects">
-      <h1>My Projects</h1>
-      <ul>
-        <li>Project 1</li>
-        <li>Project 2</li>
-        <li>Project 3</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h1>Contact Me</h1>
-      <p>Email: yourname@example.com</p>
-      <p>Phone: 555-555-5555</p>
-    </section>
-
-    <footer>
-      <p>Copyright ©2022 My Personal Website</p>
-    </footer>
-  </body>
 </html>
