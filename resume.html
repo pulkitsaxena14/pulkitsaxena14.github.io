@@ -11,6 +11,8 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="resume_style.css">
 </head>
 
@@ -24,7 +26,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Home</a>
+            <a class="navbar-brand" href="#">Pulkit Saxena</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,11 +36,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">About</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="resume.html">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
+                        <a class="nav-link" href="#projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -48,72 +50,80 @@
         </div>
     </nav>
     <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="download-container d-flex justify-content-end">
+                        <a href="resume.pdf" download>
+                            <i class="fa fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
         <main>
             <section class="objective container">
                 <h2>Objective</h2>
+                <hr>
                 <p>To secure a challenging position as a Data Scientist, utilizing my strong educational background in
                     computer science and data science as well as my experience in developing predictive models and
                     streamlining business processes.</p>
             </section>
-            <section class="about-me container">
-                <h2>About Me</h2>
-                <p>I am a highly motivated and detail-oriented data scientist with a background in computer science and
-                    data
-                    science. I have experience in developing predictive models, streamlining business processes, and
-                    creating data-driven solutions for various industries. I am passionate about data analysis and using
-                    data to drive business decisions.</p>
-            </section>
             <section class="education container">
                 <h2>Education</h2>
+                <hr>
                 <div class="education-item">
-                    <h3>Master of Science in Data Science, Rochester Institute of Technology</h3>
-                    <p>Aug 2022 - May 2024</p>
+                    <p><b>Master of Science in Data Science, Rochester Institute of Technology</b><span
+                            style="float:right;">Aug 2022 - May 2024</span></p>
                     <p>Relevant coursework: Database Design and Implementation, Foundations of Data Science and
                         Analytics,
                         Software Construction</p>
                 </div>
                 <div class="education-item">
-                    <h3>Bachelor of Engineering in Computer Science, Visvesvaraya Technological University</h3>
-                    <p>Aug 2012 - May 2017</p>
+                    <p><b>Bachelor of Engineering in Computer Science, Visvesvaraya Technological University</b><span
+                            style="float:right;">Aug 2012 - May 2017</span></h3>
+                    </p>
                     <p>Relevant coursework: Operations Research, Discrete Mathematical Structures, Graph Theory and
                         Combinatorics, Object Oriented Modeling and Design, Design and Analysis of Algorithms</p>
                 </div>
             </section>
             <section class="experience container">
                 <h2>Experience</h2>
+                <hr>
                 <div class="experience-item">
-                    <h3>Business Analyst, RedCarpetUp.com - New Delhi, IN</h3>
-                    <p>Apr 2019 - Jan 2021</p>
+                    <p><b>Business Analyst, RedCarpetUp.com - New Delhi, IN</b><span style="float:right;">Apr 2019 - Jan
+                            2021</span></p>
                     <ul>
                         <li>Developed and optimized the reporting system, resulting in more efficient data analysis.
                         </li>
-                        <li>Automated the application review process, reducing processing time and cost by 30%.</li>
-                        <li>Managed Repeat Customer Portfolio and developed a model that predicted the risk, income, and
-                            utilization of the customers which helped boost credit disbursals by 40% Month-on-Month
-                            increment.</li>
-                        <li>Created policies that helped keep credit risk in check during the COVID-19 pandemic.</li>
-                        <li>Developed new revenue lines (credit limit and product upgrade) that generated INR 5.2
-                            million in
-                            revenue over a year.</li>
+                        <li>Automated the application review process using computer vision, reducing processing time and
+                            cost by 30%.</li>
+                        <li>Developed a credit risk model to manage repeat customer portfolio, increasing credit
+                            disbursals by 40% MoM.</li>
+                        <li>Implemented data-driven policies for credit risk management during COVID-19.</li>
+                        <li>Developed new revenue streams using data-driven approaches, generating INR 5.2 million in
+                            revenue.</li>
                         <li>Managed market research and development of new products.</li>
                     </ul>
                 </div>
                 <div class="experience-item">
-                    <h3>Data Engineer, RedCarpetUp.com - New Delhi, IN</h3>
-                    <p>Oct 2017 - Mar 2019</p>
+                    <p><b>Data Engineer, RedCarpetUp.com - New Delhi, IN</b><span style="float:right;">Oct 2017 - Mar
+                            2019</span></p>
                     <ul>
                         <li>Developed the Customer Relationship Management System which governed the flow of the
                             customer lifecycle, stored various data points used for analysis and decision making by
                             creating core data pipelines</li>
-                        <li>Worked on developing and improving KYC-related processes using new-age tools like Google
-                            Vision</li>
                         <li>Built the Card Upgrade process for efficient transition from old cards (without chip) to new
                             cards (with chip) as per the new regulatory guidelines of the Reserve Bank of India</li>
                     </ul>
                 </div>
                 <div class="experience-item">
-                    <h3>Full Stack Developer Intern, Foodpost - Gurugram, IN</h3>
-                    <p>Jan 2016 - Mar 2016</p>
+                    <p><b>Full Stack Developer Intern, Foodpost - Gurugram, IN</b><span style="float:right;">Jan 2016 -
+                            Mar 2016</span></p>
                     <ul>
                         <li>Developed RESTful APIs and defined database operations</li>
                         <li>Upgraded the front-end and performed load tests on system components using jMeter</li>
@@ -122,10 +132,11 @@
             </section>
             <section class="skills container">
                 <h2>Skills</h2>
+                <hr>
                 <ul>
                     <li class="list-inline-item">Machine Learning</li>
                     <li class="list-inline-item">Python</li>
-                    <li class="list-inline-item">R</li>
+                    <li class="list-inline-item">Credit Risk Analysis and Modeling</li>
                     <li class="list-inline-item">SQL</li>
                     <li class="list-inline-item">Data Visualization</li>
                     <li class="list-inline-item">Business Analysis</li>
@@ -133,6 +144,7 @@
             </section>
             <section id="publications container">
                 <h2>Publications</h2>
+                <hr>
                 <div class="publication-item">
                     <p>"Peer-to-peer Knowledge Sharing Platform for farmers with auto-recommendation feature," IEEE
                         SmartTechCon 2017, <a href="https://doi.org/10.1109/SmartTechCon.2017.8358498">DOI:
@@ -141,8 +153,21 @@
             </section>
         </main>
     </div>
-    <footer id="footer" class="bg-primary text-white text-center py-3">
+    <footer id="footer" class="bg-dark text-white text-center py-3">
         <p>Copyright ©2022 Pulkit Saxena</p>
+        <ul class="list-inline text-center">
+            <li class="list-inline-item">
+                <a href="mailto:ps6104@rit.edu" class="btn btn-outline-light"><i class="fas fa-envelope"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://linkedin.com/in/pulkitsaxena14" class="btn btn-outline-light"><i
+                        class="fab fa-linkedin"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://github.com/pulkitsaxena14" class="btn btn-outline-light"><i
+                        class="fab fa-github"></i></a>
+            </li>
+        </ul>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

@@ -76,12 +76,12 @@ section ul li {
 /* Add some spacing between the experience items */
 .experience-item {
     margin-bottom: 2em;
-  }
-  
-  /* Style the list items in the experience section */
-  .experience-item ul li {
+}
+
+/* Style the list items in the experience section */
+.experience-item ul li {
     margin-bottom: 0.5em;
-  }
+}
 
 /* Style the list items in the skills section */
 .skills li {
@@ -95,4 +95,13 @@ section ul li {
 /* Add some spacing between the publication items */
 .publication-item {
     margin-bottom: 2em;
-  }
+}
+
+.download-container {
+    margin-top: 10px;
+}
+
+.download-container i:hover {
+    color: #0072ff;
+    transform: scale(1.1);
+}
