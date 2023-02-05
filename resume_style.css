@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #f3f3f3;
 }
 
 /* Stretch the content to fill the available space */
@@ -77,19 +78,26 @@ section ul li {
 .experience-item {
     margin-bottom: 2em;
 }
-
 /* Style the list items in the experience section */
 .experience-item ul li {
     margin-bottom: 0.5em;
 }
 
-/* Style the list items in the skills section */
+.skills-item p {
+    margin-bottom: 0em;
+}
+
+.skills-item ul {
+    display: inline-block;
+    list-style-type: disc;
+    margin-bottom: 0em;
+}
+
 .skills li {
-    padding: 0.5em;
-    margin-right: 1em;
-    background-color: #0288D1;
-    color: white;
-    border-radius: 5px;
+    float: left;
+    margin-right: 20px;
+    padding: 10px;
+    margin-bottom: 0em;
 }
 
 /* Add some spacing between the publication items */
