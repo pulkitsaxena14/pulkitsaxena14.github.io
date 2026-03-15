@@ -25,7 +25,7 @@
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous"></noscript>
 
     <!-- Preload LCP image -->
-    <link rel="preload" as="image" href="profile_headshot.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="profile_headshot.webp" type="image/webp" fetchpriority="high">
 
     <!-- Modern Styles -->
     <link rel="stylesheet" href="modern-styles.css">
@@ -208,7 +208,10 @@
 
         <div class="about-grid">
             <div class="profile-card">
-                <img src="profile_headshot.jpg" alt="Pulkit Saxena" class="profile-image" itemprop="image" width="160" height="160" fetchpriority="high" decoding="async">
+                <picture>
+                    <source srcset="profile_headshot.webp" type="image/webp">
+                    <img src="profile_headshot.jpg" alt="Pulkit Saxena" class="profile-image" itemprop="image" width="160" height="160" fetchpriority="high" decoding="async">
+                </picture>
                 <div class="contact-buttons">
                     <a href="https://linkedin.com/in/pulkitsaxena14" class="btn-primary" target="_blank" itemprop="sameAs">
                         <i class="fab fa-linkedin"></i> LinkedIn
