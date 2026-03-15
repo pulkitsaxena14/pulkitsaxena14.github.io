@@ -446,7 +446,7 @@
             <h2 class="section-title" style="text-align: center;">Ready to Collaborate?</h2>
             <p class="section-subtitle" style="text-align: center; margin-bottom: 2rem;"># let's build something impactful together</p>
             <div class="contact-buttons" style="justify-content: center;">
-                <a href="mailto:pulkitsaxena14@gmail.com" class="btn-primary">
+                <a class="btn-primary js-email-link" style="cursor:pointer">
                     <i class="fas fa-envelope"></i> Get In Touch
                 </a>
                 <a href="projects.html" class="btn-secondary">
@@ -460,7 +460,7 @@
     <footer class="modern-footer">
         <div class="footer-content">
             <div class="social-links">
-                <a href="mailto:pulkitsaxena14@gmail.com" class="social-link" aria-label="Email" itemprop="email">
+                <a class="social-link js-email-link" aria-label="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
                 <a href="https://linkedin.com/in/pulkitsaxena14" class="social-link" target="_blank" aria-label="LinkedIn" itemprop="sameAs">
@@ -495,6 +495,15 @@
             const btn = document.getElementById('theme-text');
             if (btn) btn.textContent = saved === 'dark' ? '[theme: dark]' : '[theme: light]';
         })();
+    </script>
+    <script>
+    (function() {
+      var u = 'pulkitsaxena14', d = 'gmail' + '.com';
+      var href = 'mailto:' + u + '@' + d;
+      document.querySelectorAll('.js-email-link').forEach(function(el) {
+        el.setAttribute('href', href);
+      });
+    })();
     </script>
 </body>
 

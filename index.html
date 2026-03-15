@@ -72,8 +72,6 @@
         "description": "ML Engineer & Data Scientist with 6+ years of experience across fintech, telecom, and research. Expert in building production systems, LLM/Agentic AI pipelines, and MLOps infrastructure. $50K/year cost savings, 500K+ users served, IEEE-published.",
         "url": "https://pulkitsaxena14.github.io",
         "image": "https://pulkitsaxena14.github.io/profile_headshot.jpg",
-        "email": "pulkitsaxena14@gmail.com",
-        "telephone": "(713) 572-7575",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Rochester",
@@ -415,7 +413,7 @@
             <h2 class="section-title" style="text-align:center;">Let's Work Together</h2>
             <p class="section-subtitle" style="text-align:center; margin-bottom: 2rem;"># open to opportunities in ML engineering &amp; data science</p>
             <div class="contact-buttons" style="justify-content: center;">
-                <a href="mailto:pulkitsaxena14@gmail.com" class="btn-primary" itemprop="email">
+                <a class="btn-primary js-email-link" style="cursor:pointer">
                     <i class="fas fa-envelope"></i> Start a Conversation
                 </a>
                 <a href="resume.html" class="btn-secondary">
@@ -429,7 +427,7 @@
     <footer class="modern-footer">
         <div class="footer-content">
             <div class="social-links">
-                <a href="mailto:pulkitsaxena14@gmail.com" class="social-link" aria-label="Email" itemprop="email">
+                <a class="social-link js-email-link" aria-label="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
                 <a href="https://linkedin.com/in/pulkitsaxena14" class="social-link" target="_blank" aria-label="LinkedIn" itemprop="sameAs">
@@ -474,6 +472,15 @@
                 if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
+    </script>
+    <script>
+    (function() {
+      var u = 'pulkitsaxena14', d = 'gmail' + '.com';
+      var href = 'mailto:' + u + '@' + d;
+      document.querySelectorAll('.js-email-link').forEach(function(el) {
+        el.setAttribute('href', href);
+      });
+    })();
     </script>
 </body>
 
