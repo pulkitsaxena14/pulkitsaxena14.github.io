@@ -1,81 +1,253 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 
 <head>
+    <!-- FOUC prevention -->
+    <script>document.documentElement.dataset.theme = localStorage.getItem('theme') || 'dark';</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Pulkit Saxena</title>
-    
+    <title>Projects - Pulkit Saxena | ML Engineer & Data Scientist</title>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="shortcut icon" href="favicon.ico">
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous">
-    
+
     <!-- Modern Styles -->
     <link rel="stylesheet" href="modern-styles.css">
-    
+
     <!-- SEO -->
-    <meta name="description" content="Data science projects and portfolio by Pulkit Saxena showcasing Large Language Models, Generative AI, MLOps, machine learning, analytics, and modern software engineering expertise.">
+    <meta name="description" content="Data science and ML engineering projects by Pulkit Saxena — anomaly detection, LLM pipelines, credit risk models, and more.">
+    <meta name="author" content="Pulkit Saxena">
+    <meta name="keywords" content="Pulkit Saxena Projects, ML Projects Portfolio, Anomaly Detection, Credit Risk Models, XGBoost, LLM Pipeline, Isolation Forest, Data Science Portfolio, MLOps Projects, Python ML">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0d1117">
+    <link rel="canonical" href="https://pulkitsaxena14.github.io/projects.html">
+    <link rel="alternate" type="text/plain" title="LLMs.txt" href="https://pulkitsaxena14.github.io/llms.txt">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pulkitsaxena14.github.io/projects.html">
+    <meta property="og:title" content="Projects — Pulkit Saxena | ML Engineer & Data Scientist">
+    <meta property="og:description" content="Production ML projects: $50K/year anomaly detection, 500K+ user credit risk platform, LLM pipelines, risk simulation tools, and transformer implementations.">
+    <meta property="og:image" content="https://pulkitsaxena14.github.io/profile_headshot.jpg">
+    <meta property="og:image:alt" content="Pulkit Saxena — ML Projects Portfolio">
+    <meta property="og:site_name" content="Pulkit Saxena">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projects — Pulkit Saxena | ML Engineer & Data Scientist">
+    <meta name="twitter:description" content="Production ML projects: $50K/year anomaly detection, 500K+ user credit risk platform, LLM pipelines, and more.">
+    <meta name="twitter:image" content="https://pulkitsaxena14.github.io/profile_headshot.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "ML Engineering Projects by Pulkit Saxena",
+        "description": "Production data science and ML engineering projects by Pulkit Saxena",
+        "url": "https://pulkitsaxena14.github.io/projects.html",
+        "numberOfItems": 7,
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "SoftwareApplication",
+                    "name": "Vendor Invoice Anomaly Detection System",
+                    "description": "Production anomaly detection pipeline at University of Rochester combining rule-based heuristics with Isolation Forest. Saves $50K/year.",
+                    "applicationCategory": "Machine Learning",
+                    "programmingLanguage": ["Python"],
+                    "keywords": "Isolation Forest, Anomaly Detection, SQLAlchemy, Alembic, MLflow, Docker"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@type": "SoftwareApplication",
+                    "name": "Research Analytics Platform",
+                    "description": "Analytics platform at University of Rochester processing 800GB+ of institutional research data. Increased research media coverage by 20%.",
+                    "applicationCategory": "Data Engineering",
+                    "programmingLanguage": ["Python", "SQL"],
+                    "keywords": "BigQuery, dbt, Dash, Tableau, LLMs, Data Engineering"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                    "@type": "SoftwareApplication",
+                    "name": "Risk Strategy Simulation Tool",
+                    "description": "Automated risk analysis tool at T-Mobile boosting team productivity by 40% and reducing investigation time by 75%.",
+                    "applicationCategory": "Risk Analytics",
+                    "programmingLanguage": ["Python"],
+                    "keywords": "Snowflake, Databricks, Pandas, Risk Analytics, SAS migration"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                    "@type": "SoftwareApplication",
+                    "name": "XGBoost Credit Risk Models",
+                    "description": "End-to-end credit risk ML platform at RedCarpetUp serving 500K+ users. 40% MoM credit disbursal growth.",
+                    "applicationCategory": "Machine Learning",
+                    "programmingLanguage": ["Python"],
+                    "keywords": "XGBoost, Credit Risk, A/B Testing, Docker, Flask, PostgreSQL, Airflow"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                    "@type": "SoftwareApplication",
+                    "name": "Expansive Insights: Developer ChatGPT Analysis",
+                    "description": "Research project analyzing 107,000 developer interactions with ChatGPT to understand GenAI impact on developer productivity.",
+                    "applicationCategory": "Research",
+                    "programmingLanguage": ["Python"],
+                    "keywords": "NLP, Statistical Analysis, Data Mining, ChatGPT, Developer Productivity"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 6,
+                "item": {
+                    "@type": "SoftwareApplication",
+                    "name": "Mini-GPT: Transformer Implementation",
+                    "description": "Transformer-based language model built from scratch using PyTorch, implementing attention mechanisms.",
+                    "applicationCategory": "Deep Learning",
+                    "programmingLanguage": ["Python"],
+                    "keywords": "PyTorch, Transformers, Deep Learning, NLP, Attention Mechanism"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 7,
+                "item": {
+                    "@type": "SoftwareApplication",
+                    "name": "Enterprise CRM System",
+                    "description": "CRM at RedCarpetUp serving 500K+ users with KYC image processing automating 80% of verification.",
+                    "applicationCategory": "Enterprise Software",
+                    "programmingLanguage": ["Python"],
+                    "keywords": "Flask, PostgreSQL, REST APIs, Image Processing, KYC"
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 
 <body itemscope itemtype="https://schema.org/Person">
     <!-- Theme Toggle -->
-    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
-        <span id="theme-icon">🌙</span>
-        <span id="theme-text">Dark Mode</span>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span id="theme-text">[theme: dark]</span>
     </button>
-    <!-- Modern Navigation -->
+
+    <!-- Navigation -->
     <nav class="modern-nav">
         <div class="nav-container">
-            <a href="index.html" class="nav-brand">
-                <img src="profile_headshot.jpg" alt="Pulkit Saxena" class="nav-avatar">
-                Pulkit Saxena
-            </a>
+            <a href="index.html" class="nav-brand">pulkit-saxena</a>
             <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">About</a></li>
-                <li><a href="resume.html" class="nav-link">Experience</a></li>
-                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="index.html" class="nav-link">about</a></li>
+                <li><a href="resume.html" class="nav-link">experience</a></li>
+                <li><a href="projects.html" class="nav-link active">projects</a></li>
                 <li><a href="resume.pdf" download="Pulkit_Saxena_Resume.pdf" class="nav-link download-btn-nav">
-                    <i class="fas fa-download"></i> Resume
+                    <i class="fas fa-download"></i> resume
                 </a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Header -->
-    <header class="modern-header" style="padding: 3rem 0;">
-        <div class="header-content">
-            <h1 class="hero-title" style="font-size: 2.5rem;">Project Portfolio</h1>
-            <p class="hero-subtitle">Data Science & Analytics Solutions</p>
-            <p class="hero-description">
-                Explore my journey through data science projects, from machine learning implementations to large-scale analytics platforms
-            </p>
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="header-content" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <div class="terminal-window">
+                <div class="terminal-titlebar">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot amber"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">projects/</span>
+                </div>
+                <div class="terminal-body" style="padding: 1rem 1.5rem;">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-cmd">ls ./projects/</span>
+                    </div>
+                    <div class="terminal-output" style="margin-top: 0.25rem; font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-text-secondary);">
+                        anomaly_detection.py &nbsp; research_analytics.py &nbsp; risk_simulation.py<br>
+                        credit_risk_models.py &nbsp; chatgpt_analysis.py &nbsp; mini_gpt.py &nbsp; crm_system.py
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
+    </div>
 
     <!-- Featured Projects -->
     <section class="modern-section">
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">Comprehensive data science solutions across different domains</p>
-        
-        <div class="projects-grid">
+        <div class="section-container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle"># production systems &amp; applied research</p>
+        </div>
+
+        <div class="projects-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+
+            <!-- Anomaly Detection — NEW, first card -->
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="terminal-dot red" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="terminal-dot amber" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="terminal-dot green" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="project-filename">anomaly_detection.py</span>
+                </div>
+                <div class="project-content">
+                    <div class="project-title">Vendor Invoice Anomaly Detection System</div>
+                    <p class="project-description">
+                        Production anomaly detection pipeline at University of Rochester combining rule-based heuristics
+                        with Isolation Forest to flag fraudulent or erroneous vendor invoices automatically —
+                        eliminating manual review overhead.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Isolation Forest</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">SQLAlchemy</span>
+                        <span class="tech-tag">Alembic</span>
+                        <span class="tech-tag">MLflow</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    <div class="project-impact">$ echo "Impact: $50K/year cost savings @ University of Rochester"</div>
+                    <ul class="job-achievements">
+                        <li>Hybrid rule-based + Isolation Forest pipeline with automated alerting</li>
+                        <li>SQLAlchemy ORM + Alembic for schema evolution and data lineage</li>
+                        <li>MLflow experiment tracking for model versioning and performance monitoring</li>
+                        <li>Dockerized for reproducible deployment on university infrastructure</li>
+                    </ul>
+                </div>
+            </div>
+
             <!-- Research Analytics Platform -->
             <div class="project-card">
+                <div class="project-header">
+                    <span class="terminal-dot red" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="terminal-dot amber" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="terminal-dot green" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="project-filename">research_analytics.py</span>
+                </div>
                 <div class="project-content">
-                    <h3 class="project-title">
-                        <i class="fas fa-chart-line"></i> Research Analytics Platform
-                    </h3>
+                    <div class="project-title">Research Analytics Platform</div>
                     <p class="project-description">
-                        Built a comprehensive analytics platform at University of Rochester to process 800GB+ of research data, 
-                        enhancing data-driven hiring decisions and institutional impact assessments.
+                        Comprehensive analytics platform at University of Rochester processing 800GB+ of institutional
+                        research data to support data-driven hiring decisions and impact assessments.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">BigQuery</span>
@@ -83,77 +255,93 @@
                         <span class="tech-tag">Dash</span>
                         <span class="tech-tag">Tableau</span>
                         <span class="tech-tag">Python</span>
+                        <span class="tech-tag">LLMs</span>
                     </div>
+                    <div class="project-impact">$ echo "Impact: +20% research media coverage · 800GB+ processed"</div>
                     <ul class="job-achievements">
-                        <li>Processed 800GB+ of institutional data for strategic decision-making</li>
-                        <li>Increased research focus and media coverage by 20% through interactive dashboards</li>
-                        <li>Implemented dbt for efficient data transformation and documentation</li>
-                        <li>Built peer benchmarking dashboards for institutional strategy</li>
+                        <li>Processed 800GB+ institutional data for strategic decision-making</li>
+                        <li>Integrated LLMs to automate 30% of data preparation tasks</li>
+                        <li>Deployed interactive Dash dashboards to Posit Connect</li>
+                        <li>Built peer benchmarking views for institutional strategy</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Risk Strategy Simulation Tool -->
+            <!-- Risk Strategy Simulation -->
             <div class="project-card">
+                <div class="project-header">
+                    <span class="terminal-dot red" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="terminal-dot amber" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="terminal-dot green" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="project-filename">risk_simulation.py</span>
+                </div>
                 <div class="project-content">
-                    <h3 class="project-title">
-                        <i class="fas fa-shield-alt"></i> Risk Strategy Simulation Tool
-                    </h3>
+                    <div class="project-title">Risk Strategy Simulation Tool</div>
                     <p class="project-description">
-                        Engineered an automated risk analysis tool at T-Mobile that revolutionized credit risk management 
-                        processes, boosting team productivity by 40% and reducing investigation time by 75%.
+                        Automated risk analysis tool at T-Mobile that revolutionized credit risk management,
+                        boosting team productivity by 40% and reducing investigation time by 75%.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">Pandas</span>
                         <span class="tech-tag">Snowflake</span>
                         <span class="tech-tag">Databricks</span>
-                        <span class="tech-tag">Risk Modeling</span>
+                        <span class="tech-tag">SAS→Python</span>
                     </div>
+                    <div class="project-impact">$ echo "Impact: +40% productivity · -75% investigation time"</div>
                     <ul class="job-achievements">
-                        <li>Automated risk strategy simulations boosting productivity by 40%</li>
-                        <li>Built RCA-inclusive alerts reducing investigation time by 75%</li>
-                        <li>Analyzed 35% policy deviation patterns using advanced analytics</li>
-                        <li>Migrated critical SAS pipeline to Python for better scalability</li>
+                        <li>Automated risk strategy simulations end-to-end</li>
+                        <li>RCA-inclusive alerts for policy deviation detection</li>
+                        <li>Migrated legacy SAS pipeline to Python for reproducibility &amp; MLOps</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Credit Risk Models -->
+            <!-- XGBoost Credit Risk Models -->
             <div class="project-card">
+                <div class="project-header">
+                    <span class="terminal-dot red" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="terminal-dot amber" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="terminal-dot green" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="project-filename">credit_risk_models.py</span>
+                </div>
                 <div class="project-content">
-                    <h3 class="project-title">
-                        <i class="fas fa-coins"></i> XGBoost Credit Risk Models
-                    </h3>
+                    <div class="project-title">XGBoost Credit Risk Models</div>
                     <p class="project-description">
-                        Implemented machine learning-based credit risk models at RedCarpetUp achieving 40% month-over-month 
-                        growth in credit disbursals and identifying ₹5.2M in revenue opportunities.
+                        End-to-end credit risk ML platform at RedCarpetUp (YC S15) serving 500k+ users —
+                        from feature engineering on 5TB data to production deployment with Docker and Flask.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">XGBoost</span>
                         <span class="tech-tag">A/B Testing</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Flask</span>
                         <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Looker</span>
                         <span class="tech-tag">Airflow</span>
                     </div>
+                    <div class="project-impact">$ echo "Impact: +40% MoM growth · ₹5.2M revenue identified"</div>
                     <ul class="job-achievements">
-                        <li>Led cross-functional teams achieving 40% MoM credit growth</li>
-                        <li>Implemented XGBoost models with A/B testing across 4,000+ customers</li>
-                        <li>Conducted EDA on 5TB customer data identifying ₹5.2M opportunities</li>
-                        <li>Optimized reporting efficiency by 65% using Looker and Airflow</li>
+                        <li>Led cross-functional teams to 40% MoM credit disbursal growth</li>
+                        <li>XGBoost models with rigorous A/B testing across 4,000+ customers</li>
+                        <li>Docker + Flask deployment with monitoring and alerting</li>
+                        <li>EDA on 5TB data to surface ₹5.2M revenue opportunities</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Expansive Insights Capstone -->
+            <!-- Expansive Insights -->
             <div class="project-card">
+                <div class="project-header">
+                    <span class="terminal-dot red" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="terminal-dot amber" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="terminal-dot green" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="project-filename">chatgpt_analysis.py</span>
+                </div>
                 <div class="project-content">
-                    <h3 class="project-title">
-                        <i class="fas fa-robot"></i> Expansive Insights: Developer ChatGPT Analysis
-                    </h3>
+                    <div class="project-title">Expansive Insights: Developer ChatGPT Analysis</div>
                     <p class="project-description">
-                        Capstone project analyzing 107,000 developer interactions with ChatGPT to understand GenAI's impact 
-                        on developer productivity, identifying distinct interaction patterns and usage behaviors.
+                        Capstone research project analyzing 107,000 developer interactions with ChatGPT to
+                        understand GenAI's impact on developer productivity and identify distinct usage patterns.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
@@ -163,35 +351,36 @@
                         <span class="tech-tag">Pandas</span>
                     </div>
                     <ul class="job-achievements">
-                        <li>Processed 107,000 developer interactions with advanced filtering</li>
+                        <li>Processed 107,000 developer interactions with advanced filtering &amp; deduplication</li>
                         <li>Identified 16 single-turn and 8 multi-turn interaction types</li>
                         <li>Applied statistical methods to analyze productivity patterns</li>
-                        <li>Provided insights into GenAI adoption in software development</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Mini-GPT Implementation -->
+            <!-- Mini-GPT -->
             <div class="project-card">
+                <div class="project-header">
+                    <span class="terminal-dot red" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="terminal-dot amber" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="terminal-dot green" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="project-filename">mini_gpt.py</span>
+                </div>
                 <div class="project-content">
-                    <h3 class="project-title">
-                        <i class="fas fa-brain"></i> Mini-GPT: Transformer Implementation
-                    </h3>
+                    <div class="project-title">Mini-GPT: Transformer Implementation</div>
                     <p class="project-description">
-                        Built a Transformer-based language model from scratch using PyTorch, implementing attention mechanisms 
-                        and training on the Tiny Shakespeare dataset for character-level text generation.
+                        Built a Transformer-based language model from scratch using PyTorch, implementing
+                        attention mechanisms and training on the Tiny Shakespeare dataset.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">PyTorch</span>
                         <span class="tech-tag">Transformers</span>
                         <span class="tech-tag">Deep Learning</span>
                         <span class="tech-tag">NLP</span>
-                        <span class="tech-tag">Neural Networks</span>
                     </div>
                     <ul class="job-achievements">
-                        <li>Implemented transformer architecture from first principles</li>
-                        <li>Built multi-head attention and positional encoding layers</li>
-                        <li>Trained on Shakespeare corpus for text generation</li>
+                        <li>Implemented multi-head attention and positional encoding from first principles</li>
+                        <li>Trained on Shakespeare corpus for character-level text generation</li>
                         <li>Achieved coherent character-level language modeling</li>
                     </ul>
                 </div>
@@ -199,193 +388,127 @@
 
             <!-- CRM System -->
             <div class="project-card">
+                <div class="project-header">
+                    <span class="terminal-dot red" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="terminal-dot amber" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="terminal-dot green" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="project-filename">crm_system.py</span>
+                </div>
                 <div class="project-content">
-                    <h3 class="project-title">
-                        <i class="fas fa-users"></i> Enterprise CRM System
-                    </h3>
+                    <div class="project-title">Enterprise CRM System</div>
                     <p class="project-description">
-                        Designed and built a comprehensive Customer Relationship Management system at RedCarpetUp 
-                        serving 500,000+ users with advanced data management and analytics capabilities.
+                        Built a comprehensive CRM at RedCarpetUp serving 500k+ users with KYC image processing,
+                        audit trail database schemas, and card management for 100k MAU.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Flask</span>
                         <span class="tech-tag">PostgreSQL</span>
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">REST APIs</span>
-                        <span class="tech-tag">Data Engineering</span>
+                        <span class="tech-tag">Image Processing</span>
                     </div>
                     <ul class="job-achievements">
-                        <li>Built scalable CRM system for 500,000+ users</li>
-                        <li>Designed data pipelines for customer lifecycle management</li>
-                        <li>Implemented card upgrade process for 100,000 monthly users</li>
-                        <li>Ensured regulatory compliance for financial operations</li>
+                        <li>Scalable CRM for 500,000+ users with full data management</li>
+                        <li>KYC image processing automating 80% of verification workflow</li>
+                        <li>Database schemas for audit trails and regulatory compliance</li>
+                        <li>Led team of 4–5 engineers through sprint cycles and delivery</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Technical Expertise -->
+    <!-- Impact Metrics -->
     <section class="modern-section">
-        <h2 class="section-title">Technical Expertise</h2>
-        <p class="section-subtitle">Core technologies and methodologies used across projects</p>
-        
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3><i class="fas fa-brain"></i> AI & Machine Learning</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag" itemprop="knowsAbout">Large Language Models (LLMs)</span>
-                    <span class="skill-tag" itemprop="knowsAbout">Generative AI</span>
-                    <span class="skill-tag" itemprop="knowsAbout">Deep Learning</span>
-                    <span class="skill-tag" itemprop="knowsAbout">Statistical Modeling</span>
-                    <span class="skill-tag" itemprop="knowsAbout">A/B Testing</span>
-                    <span class="skill-tag" itemprop="knowsAbout">MLOps</span>
-                </div>
-            </div>
+        <div class="section-container">
+            <h2 class="section-title">Impact &amp; Results</h2>
+            <p class="section-subtitle"># quantifiable outcomes from production systems</p>
+        </div>
 
-            <div class="skill-category">
-                <h3><i class="fas fa-chart-bar"></i> Data Analytics</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Exploratory Data Analysis</span>
-                    <span class="skill-tag">Statistical Modeling</span>
-                    <span class="skill-tag">Data Visualization</span>
-                    <span class="skill-tag">Business Intelligence</span>
-                    <span class="skill-tag">Credit Risk Modeling</span>
-                </div>
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-value">$50K</div>
+                <div class="metric-label">annual cost savings</div>
+                <div class="metric-desc">Vendor invoice anomaly detection at University of Rochester</div>
             </div>
-
-            <div class="skill-category">
-                <h3><i class="fas fa-cloud"></i> Cloud & Big Data</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">BigQuery</span>
-                    <span class="skill-tag">Snowflake</span>
-                    <span class="skill-tag">Databricks</span>
-                    <span class="skill-tag">AWS (SageMaker, S3, Lambda)</span>
-                    <span class="skill-tag">Google Cloud Platform</span>
-                    <span class="skill-tag">Apache Spark</span>
-                </div>
+            <div class="metric-card">
+                <div class="metric-value">40%</div>
+                <div class="metric-label">MoM growth</div>
+                <div class="metric-desc">Credit disbursal growth led at RedCarpetUp via ML-driven strategy</div>
             </div>
-
-            <div class="skill-category">
-                <h3><i class="fas fa-cogs"></i> Data Engineering</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">dbt</span>
-                    <span class="skill-tag">Apache Airflow</span>
-                    <span class="skill-tag">ETL/ELT Pipelines</span>
-                    <span class="skill-tag">PostgreSQL</span>
-                    <span class="skill-tag">Data Pipelines</span>
-                    <span class="skill-tag">Docker</span>
-                </div>
+            <div class="metric-card">
+                <div class="metric-value">75%</div>
+                <div class="metric-label">investigation time reduction</div>
+                <div class="metric-desc">Via RCA-inclusive alert system at T-Mobile risk management</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">800GB+</div>
+                <div class="metric-label">data processed</div>
+                <div class="metric-desc">Research analytics platform at University of Rochester</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">500K+</div>
+                <div class="metric-label">users served</div>
+                <div class="metric-desc">Production ML platform and CRM system at RedCarpetUp</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">30%</div>
+                <div class="metric-label">efficiency gain</div>
+                <div class="metric-desc">LLM-assisted data preparation automation in research pipelines</div>
             </div>
         </div>
     </section>
 
-    <!-- Published Research -->
+    <!-- Research & Publications -->
     <section class="modern-section">
-        <h2 class="section-title">Research & Publications</h2>
-        
-        <div class="projects-grid">
-            <div class="project-card">
-            <div class="project-content">
-                <h3 class="project-title">
-                    <i class="fas fa-seedling"></i> Peer-to-peer Knowledge Sharing Platform for Farmers
-                </h3>
-                <p class="project-description">
-                    Published research on developing an intelligent recommendation system for agricultural knowledge 
-                    sharing, enabling farmers to access relevant information and best practices.
+        <div class="section-container">
+            <h2 class="section-title">Research &amp; Publications</h2>
+            <p class="section-subtitle"># peer-reviewed work</p>
+        </div>
+
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <div class="publication-card">
+                <div class="project-header" style="padding: 0.75rem 0; border-bottom: none; background: none; margin-bottom: 0.75rem;">
+                    <span class="terminal-dot red" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="terminal-dot amber" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="terminal-dot green" style="width:10px;height:10px;flex-shrink:0;"></span>
+                    <span class="project-filename">ieee_2017.bib</span>
+                </div>
+                <div class="pub-title">Peer-to-peer Knowledge Sharing Platform for Farmers with Auto-Recommendation Feature</div>
+                <div class="pub-venue">IEEE SmartTechCon 2017</div>
+                <p style="color: var(--color-text-secondary); font-size: 0.88rem; line-height: 1.6; margin-bottom: 1rem;">
+                    Published research on developing an intelligent recommendation system for agricultural knowledge sharing,
+                    enabling farmers to access relevant information and best practices.
                 </p>
-                <div class="project-tech">
+                <div class="project-tech" style="margin-bottom: 1rem;">
                     <span class="tech-tag">Recommendation Systems</span>
                     <span class="tech-tag">Machine Learning</span>
                     <span class="tech-tag">Agricultural Tech</span>
-                    <span class="tech-tag">Knowledge Management</span>
                 </div>
-                <ul class="job-achievements">
-                    <li><strong>Published:</strong> IEEE SmartTechCon 2017</li>
-                    <li><strong>DOI:</strong> 10.1109/SmartTechCon.2017.8358498</li>
-                    <li>Developed auto-recommendation feature for agricultural knowledge</li>
-                    <li>Created peer-to-peer learning platform for farmer communities</li>
-                </ul>
-                <div class="contact-buttons">
-                    <a href="https://doi.org/10.1109/SmartTechCon.2017.8358498" class="btn-primary" target="_blank">
-                        <i class="fas fa-external-link-alt"></i> View Publication
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Metrics -->
-    <section class="modern-section">
-        <h2 class="section-title">Impact & Results</h2>
-        <p class="section-subtitle">Quantifiable outcomes from data science initiatives</p>
-        
-        <div class="experience-grid">
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div>
-                        <h3 class="job-title">Business Growth</h3>
-                        <p class="company-name">Revenue & Efficiency Gains</p>
-                    </div>
-                    <span class="job-duration">40% Growth</span>
-                </div>
-                <ul class="job-achievements">
-                    <li>40% month-over-month credit disbursal growth at RedCarpetUp</li>
-                    <li>₹5.2M in identified revenue opportunities through data analysis</li>
-                    <li>65% improvement in data analysis efficiency</li>
-                </ul>
-            </div>
-
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div>
-                        <h3 class="job-title">Operational Excellence</h3>
-                        <p class="company-name">Productivity & Process Optimization</p>
-                    </div>
-                    <span class="job-duration">75% Reduction</span>
-                </div>
-                <ul class="job-achievements">
-                    <li>40% boost in team productivity through automation at T-Mobile</li>
-                    <li>75% reduction in investigation time via intelligent alerts</li>
-                    <li>20% increase in research focus and media coverage</li>
-                </ul>
-            </div>
-
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div>
-                        <h3 class="job-title">Scale & Performance</h3>
-                        <p class="company-name">Data Processing & User Impact</p>
-                    </div>
-                    <span class="job-duration">800GB+</span>
-                </div>
-                <ul class="job-achievements">
-                    <li>800GB+ data processing for research analytics platform</li>
-                    <li>500,000+ users served by CRM system</li>
-                    <li>107,000+ developer interactions analyzed for AI research</li>
-                </ul>
+                <a href="https://doi.org/10.1109/SmartTechCon.2017.8358498" class="pub-doi" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> DOI: 10.1109/SmartTechCon.2017.8358498
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Call to Action -->
     <section class="modern-section" style="text-align: center;">
-        <h2 class="section-title">Let's Build Something Amazing</h2>
-        <p class="section-subtitle">
-            Interested in collaborating on your next data science project? Let's discuss how these experiences 
-            can drive innovation for your organization.
-        </p>
-        <div class="contact-buttons">
-            <a href="mailto:pulkitsaxena14@gmail.com" class="btn-primary">
-                <i class="fas fa-envelope"></i> Start a Conversation
-            </a>
-            <a href="resume.html" class="btn-secondary">
-                <i class="fas fa-user"></i> View Full Experience
-            </a>
+        <div class="section-container">
+            <h2 class="section-title" style="text-align: center;">Let's Build Something</h2>
+            <p class="section-subtitle" style="text-align: center; margin-bottom: 2rem;"># open to ml engineering &amp; data science opportunities</p>
+            <div class="contact-buttons" style="justify-content: center;">
+                <a href="mailto:pulkitsaxena14@gmail.com" class="btn-primary">
+                    <i class="fas fa-envelope"></i> Start a Conversation
+                </a>
+                <a href="resume.html" class="btn-secondary">
+                    <i class="fas fa-terminal"></i> View Full Experience
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Modern Footer -->
+    <!-- Footer -->
     <footer class="modern-footer">
         <div class="footer-content">
             <div class="social-links">
@@ -399,36 +522,31 @@
                     <i class="fab fa-github"></i>
                 </a>
             </div>
-            <p>&copy; 2024 <span itemprop="name">Pulkit Saxena</span>. Crafted with passion for data science.</p>
+            <p>&copy; 2025 <span itemprop="name">Pulkit Saxena</span>. Built with terminal energy.</p>
         </div>
     </footer>
 
     <script>
         function toggleTheme() {
             const html = document.documentElement;
-            const themeIcon = document.getElementById('theme-icon');
             const themeText = document.getElementById('theme-text');
-            
-            if (html.dataset.theme === 'light') {
-                html.dataset.theme = 'dark';
-                themeIcon.textContent = '☀️';
-                themeText.textContent = 'Light Mode';
-                localStorage.setItem('theme', 'dark');
-            } else {
+
+            if (html.dataset.theme === 'dark') {
                 html.dataset.theme = 'light';
-                themeIcon.textContent = '🌙';
-                themeText.textContent = 'Dark Mode';
+                themeText.textContent = '[theme: light]';
                 localStorage.setItem('theme', 'light');
+            } else {
+                html.dataset.theme = 'dark';
+                themeText.textContent = '[theme: dark]';
+                localStorage.setItem('theme', 'dark');
             }
         }
 
-        // Initialize theme from localStorage
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        document.documentElement.dataset.theme = savedTheme;
-        if (savedTheme === 'dark') {
-            document.getElementById('theme-icon').textContent = '☀️';
-            document.getElementById('theme-text').textContent = 'Light Mode';
-        }
+        (function() {
+            const saved = document.documentElement.dataset.theme;
+            const btn = document.getElementById('theme-text');
+            if (btn) btn.textContent = saved === 'dark' ? '[theme: dark]' : '[theme: light]';
+        })();
     </script>
 </body>
 

@@ -1,0 +1,55 @@
+# Pulkit Saxena
+
+> ML Engineer & Data Scientist with 6+ years of experience across fintech, telecom, and research. Expert in building production ML systems, LLM/Agentic AI pipelines, and MLOps infrastructure. $50K/year cost savings delivered, 500K+ users served, MS Data Science (RIT, 3.87 GPA), IEEE-published.
+
+## About
+
+Pulkit Saxena is a Data Scientist and ML Engineer currently at the University of Rochester, where he builds production data systems, anomaly detection pipelines, and LLM-powered workflows. He specializes in bridging experimental AI research and production-grade engineering.
+
+- **Current role**: Data Scientist at University of Rochester (Aug 2024–Present)
+- **Location**: Rochester, NY (open to remote/hybrid)
+- **Contact**: pulkitsaxena14@gmail.com
+- **LinkedIn**: https://linkedin.com/in/pulkitsaxena14
+- **GitHub**: https://github.com/pulkitsaxena14
+
+## Professional Experience
+
+- **University of Rochester** (Aug 2024–Present): Data Scientist. Built research analytics platform processing 800GB+ data. Implemented hybrid rule-based + Isolation Forest anomaly detection saving $50K/year. Deployed LLM pipelines improving data prep by 30%. Built GitLab MLOps Python Client with MLflow integration. Dockerized Dash dashboards on Posit Connect. Configured dbt for transformation workflows.
+- **T-Mobile USA** (May–Aug 2023): Credit Risk Management Intern. Built automated Risk Strategy Simulation Tool (+40% productivity). RCA-inclusive alerts for policy deviations (−75% investigation time). Migrated legacy SAS pipeline to Python for MLOps. Analyzed 35% policy deviation using Snowflake, Databricks, Pandas.
+- **RedCarpetUp (YC S15)** (Apr 2019–Jan 2021): Data Scientist. Led ML platform for 500K+ users, 40% MoM credit disbursal growth. XGBoost credit risk models with A/B testing across 4,000+ customers. Docker + Flask production deployment. EDA on 5TB customer data identifying ₹5.2M revenue opportunities.
+- **RedCarpetUp (YC S15)** (Oct 2017–Mar 2019): Software Engineer. Built Flask/PostgreSQL CRM for 500K+ users. KYC image processing automating 80% of verification. Led team of 4–5 engineers through sprint planning and delivery.
+- **Foodpost** (Jan–Mar 2016): Full Stack Developer Intern. RESTful APIs with PHP/Codeigniter.
+
+## Technical Skills
+
+- **AI & ML**: LangChain, Agentic AI, scikit-learn, MLflow, XGBoost, Isolation Forest, A/B Testing
+- **Data Engineering**: dbt, Airflow, Dagster, ETL/ELT, SQLAlchemy, Alembic, Spark, PySpark, Schema Evolution
+- **Cloud & Big Data**: GCP/BigQuery, AWS SageMaker, AWS S3, Snowflake, Databricks, PostgreSQL
+- **Infrastructure & Tools**: Docker, DevContainers, Git, GitLab CI/CD, Flask, Dash, Posit Connect, Tableau, Linux
+- **Languages**: Python, SQL, R, C++, Bash
+
+## Education
+
+- **MS Data Science** — Rochester Institute of Technology (2022–2024), GPA 3.87/4.0. Coursework: Machine Learning, Statistical Analysis, Big Data Analytics, Database Systems.
+- **BE Computer Science** — Visvesvaraya Technological University (2012–2017). Coursework: Data Structures, Algorithms, Database Management, Software Engineering.
+
+## Publications
+
+- "Peer-to-peer Knowledge Sharing Platform for Farmers with Auto-Recommendation Feature" — IEEE SmartTechCon 2017. DOI: 10.1109/SmartTechCon.2017.8358498. URL: https://doi.org/10.1109/SmartTechCon.2017.8358498
+
+## Projects
+
+- **Vendor Invoice Anomaly Detection**: Isolation Forest + rule-based pipeline at UofR. $50K/year savings. Stack: Python, SQLAlchemy, Alembic, MLflow, Docker.
+- **Research Analytics Platform**: 800GB+ BigQuery pipeline at UofR. +20% research media coverage. Stack: BigQuery, dbt, Dash, Tableau, LLMs.
+- **Risk Strategy Simulation Tool**: T-Mobile. +40% productivity, −75% investigation time. Stack: Python, Pandas, Snowflake, Databricks.
+- **XGBoost Credit Risk Models**: RedCarpetUp. 500K+ users, 40% MoM growth, ₹5.2M revenue identified. Stack: XGBoost, Docker, Flask, PostgreSQL, Airflow.
+- **Expansive Insights — ChatGPT Analysis**: Analyzed 107,000 developer interactions with GenAI. Identified 16 single-turn + 8 multi-turn interaction patterns.
+- **Mini-GPT**: Transformer built from scratch in PyTorch. Character-level language modeling on Shakespeare corpus.
+- **Enterprise CRM System**: Flask/PostgreSQL CRM for 500K+ users. KYC image processing, audit trail schemas.
+
+## Pages
+
+- [About](https://pulkitsaxena14.github.io/) — Profile, skills overview, key achievements
+- [Experience](https://pulkitsaxena14.github.io/resume.html) — Full resume with all work history, education, publications
+- [Projects](https://pulkitsaxena14.github.io/projects.html) — ML projects portfolio with impact metrics
+- [Resume PDF](https://pulkitsaxena14.github.io/resume.pdf) — Downloadable PDF resume

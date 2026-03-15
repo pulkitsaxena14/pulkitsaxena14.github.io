@@ -1,10 +1,11 @@
 User-agent: *
 Allow: /
+Crawl-delay: 1
 
 # Sitemap
 Sitemap: https://pulkitsaxena14.github.io/sitemap.xml
 
-# Allow AI crawlers
+# AI search assistants
 User-agent: GPTBot
 Allow: /
 
@@ -17,5 +18,41 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
 User-agent: Applebot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# Social media crawlers
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+# Web archiving
+User-agent: ia_archiver
+Allow: /
+
+# Search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
 Allow: /

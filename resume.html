@@ -1,294 +1,412 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 
 <head>
+    <!-- FOUC prevention -->
+    <script>document.documentElement.dataset.theme = localStorage.getItem('theme') || 'dark';</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience - Pulkit Saxena</title>
-    
+    <title>Experience - Pulkit Saxena | ML Engineer & Data Scientist</title>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="shortcut icon" href="favicon.ico">
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous">
-    
+
     <!-- Modern Styles -->
     <link rel="stylesheet" href="modern-styles.css">
-    
+
     <!-- SEO -->
-    <meta name="description" content="Detailed professional experience and resume of Pulkit Saxena - Data Scientist with expertise in Large Language Models (LLMs), Generative AI, MLOps, analytics, machine learning, and modern data engineering.">
+    <meta name="description" content="Professional experience and resume of Pulkit Saxena — ML Engineer & Data Scientist with expertise in LLMs, Agentic AI, MLOps, and production data systems.">
+    <meta name="author" content="Pulkit Saxena">
+    <meta name="keywords" content="Pulkit Saxena Resume, ML Engineer Resume, Data Scientist Resume, MLOps Engineer, LLM Engineer, Data Engineering, University of Rochester, T-Mobile, RedCarpetUp, Python, dbt, Airflow, XGBoost, Docker">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0d1117">
+    <link rel="canonical" href="https://pulkitsaxena14.github.io/resume.html">
+    <link rel="alternate" type="text/plain" title="LLMs.txt" href="https://pulkitsaxena14.github.io/llms.txt">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://pulkitsaxena14.github.io/resume.html">
+    <meta property="og:title" content="Experience — Pulkit Saxena | ML Engineer & Data Scientist">
+    <meta property="og:description" content="6+ years across fintech, telecom, and research. University of Rochester · T-Mobile · RedCarpetUp (YC S15). MS Data Science, 3.87 GPA. IEEE-published.">
+    <meta property="og:image" content="https://pulkitsaxena14.github.io/profile_headshot.jpg">
+    <meta property="og:image:alt" content="Pulkit Saxena — ML Engineer & Data Scientist">
+    <meta property="og:site_name" content="Pulkit Saxena">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Experience — Pulkit Saxena | ML Engineer & Data Scientist">
+    <meta name="twitter:description" content="6+ years across fintech, telecom, and research. University of Rochester · T-Mobile · RedCarpetUp (YC S15). MS Data Science, 3.87 GPA.">
+    <meta name="twitter:image" content="https://pulkitsaxena14.github.io/profile_headshot.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pulkit Saxena",
+        "jobTitle": ["ML Engineer", "Data Scientist"],
+        "url": "https://pulkitsaxena14.github.io",
+        "image": "https://pulkitsaxena14.github.io/profile_headshot.jpg",
+        "sameAs": [
+            "https://linkedin.com/in/pulkitsaxena14",
+            "https://github.com/pulkitsaxena14"
+        ],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "University of Rochester"
+        },
+        "alumniOf": [
+            {
+                "@type": "EducationalOrganization",
+                "name": "Rochester Institute of Technology",
+                "description": "Master of Science in Data Science, GPA 3.87/4.0, 2022–2024"
+            },
+            {
+                "@type": "EducationalOrganization",
+                "name": "Visvesvaraya Technological University",
+                "description": "Bachelor of Engineering in Computer Science, 2012–2017"
+            }
+        ],
+        "hasCredential": {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Master of Science in Data Science",
+            "recognizedBy": {
+                "@type": "EducationalOrganization",
+                "name": "Rochester Institute of Technology"
+            }
+        },
+        "author": [{
+            "@type": "ScholarlyArticle",
+            "name": "Peer-to-peer Knowledge Sharing Platform for Farmers with Auto-Recommendation Feature",
+            "publisher": {
+                "@type": "Organization",
+                "name": "IEEE SmartTechCon 2017"
+            },
+            "identifier": "10.1109/SmartTechCon.2017.8358498",
+            "url": "https://doi.org/10.1109/SmartTechCon.2017.8358498"
+        }]
+    }
+    </script>
 </head>
 
 <body itemscope itemtype="https://schema.org/Person">
     <!-- Theme Toggle -->
-    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
-        <span id="theme-icon">🌙</span>
-        <span id="theme-text">Dark Mode</span>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span id="theme-text">[theme: dark]</span>
     </button>
-    <!-- Modern Navigation -->
+
+    <!-- Navigation -->
     <nav class="modern-nav">
         <div class="nav-container">
-            <a href="index.html" class="nav-brand">
-                <img src="profile_headshot.jpg" alt="Pulkit Saxena" class="nav-avatar">
-                Pulkit Saxena
-            </a>
+            <a href="index.html" class="nav-brand">pulkit-saxena</a>
             <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">About</a></li>
-                <li><a href="resume.html" class="nav-link active">Experience</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="index.html" class="nav-link">about</a></li>
+                <li><a href="resume.html" class="nav-link active">experience</a></li>
+                <li><a href="projects.html" class="nav-link">projects</a></li>
                 <li><a href="resume.pdf" download="Pulkit_Saxena_Resume.pdf" class="nav-link download-btn-nav">
-                    <i class="fas fa-download"></i> Resume
+                    <i class="fas fa-download"></i> resume
                 </a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Header with Download -->
-    <header class="modern-header" style="padding: 3rem 0;">
-        <div class="header-content">
-            <h1 class="hero-title" style="font-size: 2.5rem;">Professional Experience</h1>
-            <p class="hero-subtitle">Building data-driven solutions across industries</p>
+    <!-- Page Header — compact terminal -->
+    <div class="page-header">
+        <div class="header-content" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <div class="terminal-window">
+                <div class="terminal-titlebar">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot amber"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">resume.md</span>
+                </div>
+                <div class="terminal-body" style="padding: 1rem 1.5rem;">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">$</span>
+                        <span class="terminal-cmd">cat resume.md</span>
+                    </div>
+                    <div class="terminal-output" style="margin-top: 0.25rem;">
+                        <strong>Pulkit Saxena</strong> — ML Engineer &amp; Data Scientist<br>
+                        <span style="color: var(--color-text-muted); font-family: var(--font-mono); font-size: 0.85rem;">6+ yrs · fintech · telecom · research · MS Data Science (RIT) · IEEE-published</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
+    </div>
 
     <!-- Professional Experience -->
     <section class="modern-section">
-        <h2 class="section-title">Professional Experience</h2>
-        
-        <div class="experience-grid">
+        <div class="section-container">
+            <h2 class="section-title">Professional Experience</h2>
+            <p class="section-subtitle"># production engineering across three industries</p>
+        </div>
+
+        <div class="experience-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <!-- University of Rochester -->
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <h3 class="job-title" itemprop="jobTitle">Data Scientist</h3>
-                        <p class="company-name" itemprop="worksFor" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">University of Rochester</span> • <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><span itemprop="addressLocality">Rochester</span>, <span itemprop="addressRegion">NY</span></span></p>
+                        <div class="job-title" itemprop="jobTitle">Data Scientist</div>
+                        <div class="company-name" itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
+                            <span itemprop="name">University of Rochester</span> · Rochester, NY
+                        </div>
                     </div>
-                    <span class="job-duration">Aug 2024 - Present</span>
+                    <span class="job-duration">Aug 2024 – Present</span>
                 </div>
-                <ul class="job-achievements">
-                    <li>Built research analytics platform processing 800GB+ data using BigQuery, Python, and SQL for data-driven hiring and impact assessments</li>
-                    <li>Integrated Large Language Models (LLMs) into data pipelines, improving data preparation efficiency by 30%</li>
-                    <li>Configured dbt for data transformation, documentation, and MLOps workflows using modern data engineering practices</li>
-                    <li>Developed interactive dashboards with Dash and Tableau, increasing research focus and media coverage by 20%</li>
-                    <li>Applied Generative AI and prompt engineering for automated code generation and data workflow optimization</li>
-                </ul>
+                <div class="card-body">
+                    <div class="line-numbers">
+                        <span>1</span><span>2</span><span>3</span><span>4</span>
+                        <span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
+                    </div>
+                    <ul class="job-achievements">
+                        <li>Built research analytics platform processing 800GB+ data using BigQuery, Python, and SQL for data-driven hiring and impact assessments</li>
+                        <li>Integrated Large Language Models (LLMs) into data pipelines, improving data preparation efficiency by 30%</li>
+                        <li>Implemented hybrid rule-based + Isolation Forest anomaly detection for vendor invoices, saving $50K/year</li>
+                        <li>Designed SQLAlchemy ORM models and Alembic migration workflows for schema evolution</li>
+                        <li>Built GitLab MLOps Python Client with MLflow integration for experiment tracking and deployment</li>
+                        <li>Dockerized Dash dashboards for production deployment on Posit Connect</li>
+                        <li>Configured dbt for data transformation, documentation, and MLOps workflows</li>
+                        <li>Applied Generative AI and prompt engineering for automated code generation and workflow optimization</li>
+                        <li>Developed interactive Tableau dashboards, increasing research focus and media coverage by 20%</li>
+                    </ul>
+                </div>
             </div>
 
+            <!-- T-Mobile -->
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <h3 class="job-title">Credit Risk Management (Data Science) Intern</h3>
-                        <p class="company-name">T-Mobile, USA • Overland Park, KS</p>
+                        <div class="job-title">Credit Risk Management (Data Science) Intern</div>
+                        <div class="company-name">T-Mobile, USA · Overland Park, KS</div>
                     </div>
-                    <span class="job-duration">May 2023 - Aug 2023</span>
+                    <span class="job-duration">May 2023 – Aug 2023</span>
                 </div>
-                <ul class="job-achievements">
-                    <li>Engineered an automated Risk Strategy Simulation Tool, boosting team productivity by 40% using Python/Pandas</li>
-                    <li>Conducted in-depth analysis of a 35% policy deviation using Snowflake, Databricks, and Pandas</li>
-                    <li>Built RCA-inclusive alerts to detect policy deviations, reducing investigation time by 75%</li>
-                    <li>Migrated critical analysis pipeline from SAS to Python</li>
-                </ul>
+                <div class="card-body">
+                    <div class="line-numbers">
+                        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                    </div>
+                    <ul class="job-achievements">
+                        <li>Engineered an automated Risk Strategy Simulation Tool, boosting team productivity by 40% using Python/Pandas</li>
+                        <li>Conducted in-depth analysis of a 35% policy deviation using Snowflake, Databricks, and Pandas</li>
+                        <li>Built RCA-inclusive alerts to detect policy deviations, reducing investigation time by 75%</li>
+                        <li>Modernized legacy SAS pipeline to Python, enabling version control, reproducibility, and MLOps integration</li>
+                        <li>Delivered findings to senior risk leadership, influencing underwriting policy adjustments</li>
+                    </ul>
+                </div>
             </div>
 
+            <!-- RedCarpetUp Data Scientist -->
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <h3 class="job-title">Data Scientist</h3>
-                        <p class="company-name">RedCarpetUp.com (YC S15) • New Delhi, India</p>
+                        <div class="job-title">Data Scientist</div>
+                        <div class="company-name">RedCarpetUp.com (YC S15) · New Delhi, India</div>
                     </div>
-                    <span class="job-duration">Apr 2019 - Jan 2021</span>
+                    <span class="job-duration">Apr 2019 – Jan 2021</span>
                 </div>
-                <ul class="job-achievements">
-                    <li>Led cross-functional teams of analysts and software engineers achieving 40% month-over-month credit disbursal growth</li>
-                    <li>Mentored junior analysts and interns, establishing machine learning best practices and data science workflows</li>
-                    <li>Owned end-to-end product development for credit risk assessment platform serving 500,000+ users</li>
-                    <li>Implemented XGBoost-based credit risk models with A/B testing across 4,000+ customers using statistical modeling</li>
-                    <li>Conducted exploratory data analysis on 5TB customer data, identifying ₹5.2M revenue opportunities using PostgreSQL, Pandas</li>
-                    <li>Architected automated reporting systems using Looker and Airflow, boosting data analysis efficiency by 65%</li>
-                </ul>
+                <div class="card-body">
+                    <div class="line-numbers">
+                        <span>1</span><span>2</span><span>3</span><span>4</span>
+                        <span>5</span><span>6</span><span>7</span><span>8</span>
+                    </div>
+                    <ul class="job-achievements">
+                        <li>Led cross-functional teams of analysts and software engineers achieving 40% month-over-month credit disbursal growth</li>
+                        <li>Owned end-to-end product development for credit risk assessment platform serving 500,000+ users</li>
+                        <li>Implemented XGBoost-based credit risk models with A/B testing across 4,000+ customers using statistical modeling</li>
+                        <li>Deployed ML models with Docker and Flask, ensuring scalable, reliable predictions and monitoring</li>
+                        <li>Conducted exploratory data analysis on 5TB customer data, identifying ₹5.2M revenue opportunities using PostgreSQL, Pandas</li>
+                        <li>Architected automated reporting systems using Looker and Airflow, boosting data analysis efficiency by 65%</li>
+                        <li>Mentored junior analysts and interns, establishing machine learning best practices and data science workflows</li>
+                        <li>Published insights and model performance metrics via internal BI dashboards used by executive leadership</li>
+                    </ul>
+                </div>
             </div>
 
+            <!-- RedCarpetUp Software Engineer -->
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <h3 class="job-title">Software Engineer</h3>
-                        <p class="company-name">RedCarpetUp.com (YC S15) • New Delhi, India</p>
+                        <div class="job-title">Software Engineer</div>
+                        <div class="company-name">RedCarpetUp.com (YC S15) · New Delhi, India</div>
                     </div>
-                    <span class="job-duration">Oct 2017 - Mar 2019</span>
+                    <span class="job-duration">Oct 2017 – Mar 2019</span>
                 </div>
-                <ul class="job-achievements">
-                    <li>Built a CRM system for 500,000+ users with Flask and PostgreSQL, streamlining data management and analytics</li>
-                    <li>Set-up and managed card upgrade process for 100,000 monthly active users, ensuring regulatory compliance</li>
-                </ul>
+                <div class="card-body">
+                    <div class="line-numbers">
+                        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                    </div>
+                    <ul class="job-achievements">
+                        <li>Built a CRM system for 500,000+ users with Flask and PostgreSQL, streamlining data management and analytics</li>
+                        <li>Designed database schemas for user and agent activity tracking, enabling audit trails and compliance</li>
+                        <li>Implemented image processing for KYC document verification, automating 80% of the process</li>
+                        <li>Led team of 4–5 engineers and interns, owning sprint planning, code reviews, and delivery</li>
+                        <li>Set up and managed card upgrade process for 100,000 monthly active users, ensuring regulatory compliance</li>
+                    </ul>
+                </div>
             </div>
 
+            <!-- Foodpost -->
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <h3 class="job-title">Full Stack Developer Intern</h3>
-                        <p class="company-name">Foodpost • Gurugram, India</p>
+                        <div class="job-title">Full Stack Developer Intern</div>
+                        <div class="company-name">Foodpost · Gurugram, India</div>
                     </div>
-                    <span class="job-duration">Jan 2016 - Mar 2016</span>
+                    <span class="job-duration">Jan 2016 – Mar 2016</span>
                 </div>
-                <ul class="job-achievements">
-                    <li>Developed RESTful APIs and performed database operations using PHP (Codeigniter framework) and SQL</li>
-                    <li>Upgraded front-end (HTML5, CSS3, Bootstrap) and conducted load tests on system components using jMeter</li>
-                </ul>
+                <div class="card-body">
+                    <div class="line-numbers">
+                        <span>1</span><span>2</span>
+                    </div>
+                    <ul class="job-achievements">
+                        <li>Developed RESTful APIs and performed database operations using PHP (Codeigniter) and SQL</li>
+                        <li>Upgraded front-end (HTML5, CSS3, Bootstrap) and conducted load tests using jMeter</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Education -->
     <section class="modern-section">
-        <h2 class="section-title">Education</h2>
-        
-        <div class="experience-grid">
+        <div class="section-container">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle"># academic background</p>
+        </div>
+
+        <div class="experience-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <h3 class="job-title">Master of Science - Data Science</h3>
-                        <p class="company-name" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization"><span itemprop="name">Rochester Institute of Technology</span></p>
+                        <div class="job-title">Master of Science — Data Science</div>
+                        <div class="company-name" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+                            <span itemprop="name">Rochester Institute of Technology</span>
+                        </div>
                     </div>
-                    <span class="job-duration">Aug 2022 - May 2024</span>
+                    <span class="job-duration">Aug 2022 – May 2024</span>
                 </div>
-                <ul class="job-achievements">
-                    <li><strong>CGPA:</strong> 3.87/4.0</li>
-                    <li><strong>Relevant Coursework:</strong> Machine Learning, Statistical Analysis, Big Data Analytics, Database Systems</li>
-                </ul>
+                <div class="card-body-simple">
+                    <ul class="job-achievements">
+                        <li><strong style="color: var(--color-amber);">CGPA:</strong> 3.87 / 4.0</li>
+                        <li><strong style="color: var(--color-amber);">Coursework:</strong> Machine Learning, Statistical Analysis, Big Data Analytics, Database Systems</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <h3 class="job-title">Bachelor of Engineering - Computer Science</h3>
-                        <p class="company-name">Visvesvaraya Technological University</p>
+                        <div class="job-title">Bachelor of Engineering — Computer Science</div>
+                        <div class="company-name">Visvesvaraya Technological University</div>
                     </div>
-                    <span class="job-duration">Aug 2012 - May 2017</span>
+                    <span class="job-duration">Aug 2012 – May 2017</span>
                 </div>
-                <ul class="job-achievements">
-                    <li><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Database Management, Software Engineering</li>
-                </ul>
+                <div class="card-body-simple">
+                    <ul class="job-achievements">
+                        <li><strong style="color: var(--color-amber);">Coursework:</strong> Data Structures, Algorithms, Database Management, Software Engineering</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Technical Skills -->
     <section class="modern-section">
-        <h2 class="section-title">Technical Skills</h2>
-        
-        <div class="skills-grid">
+        <div class="section-container">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle"># technology stack</p>
+        </div>
+
+        <div class="skills-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
             <div class="skill-category">
-                <h3><i class="fas fa-brain"></i> Programming & AI</h3>
+                <div class="skill-category-header">
+                    <h3><i class="fas fa-brain"></i> AI &amp; ML</h3>
+                    <div class="skill-loadbar"><div class="skill-loadbar-fill"></div></div>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">LangChain</span>
+                    <span class="skill-tag">Agentic AI</span>
+                    <span class="skill-tag">scikit-learn</span>
+                    <span class="skill-tag">MLflow</span>
+                    <span class="skill-tag">XGBoost</span>
+                    <span class="skill-tag">Isolation Forest</span>
+                    <span class="skill-tag">A/B Testing</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <h3><i class="fas fa-database"></i> Data Engineering</h3>
+                    <div class="skill-loadbar"><div class="skill-loadbar-fill" style="width:88%"></div></div>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">dbt</span>
+                    <span class="skill-tag">Airflow</span>
+                    <span class="skill-tag">Dagster</span>
+                    <span class="skill-tag">ETL/ELT</span>
+                    <span class="skill-tag">SQLAlchemy</span>
+                    <span class="skill-tag">Alembic</span>
+                    <span class="skill-tag">Spark</span>
+                    <span class="skill-tag">PySpark</span>
+                    <span class="skill-tag">Schema Evolution</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <h3><i class="fas fa-cloud"></i> Cloud &amp; Big Data</h3>
+                    <div class="skill-loadbar"><div class="skill-loadbar-fill" style="width:85%"></div></div>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">GCP/BigQuery</span>
+                    <span class="skill-tag">AWS SageMaker</span>
+                    <span class="skill-tag">AWS S3</span>
+                    <span class="skill-tag">Snowflake</span>
+                    <span class="skill-tag">Databricks</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <h3><i class="fas fa-tools"></i> Infrastructure &amp; Tools</h3>
+                    <div class="skill-loadbar"><div class="skill-loadbar-fill" style="width:82%"></div></div>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">DevContainers</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitLab CI/CD</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">Dash</span>
+                    <span class="skill-tag">Posit Connect</span>
+                    <span class="skill-tag">Tableau</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-category-header">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-loadbar"><div class="skill-loadbar-fill" style="width:95%"></div></div>
+                </div>
                 <div class="skill-tags">
                     <span class="skill-tag">Python</span>
                     <span class="skill-tag">SQL</span>
                     <span class="skill-tag">R</span>
                     <span class="skill-tag">C++</span>
-                    <span class="skill-tag">Large Language Models (LLMs)</span>
-                    <span class="skill-tag">Generative AI</span>
-                    <span class="skill-tag">Machine Learning</span>
-                    <span class="skill-tag">Deep Learning</span>
-                    <span class="skill-tag">Natural Language Processing</span>
-                    <span class="skill-tag">Computer Vision</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3><i class="fas fa-robot"></i> ML/AI Frameworks</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">TensorFlow</span>
-                    <span class="skill-tag">PyTorch</span>
-                    <span class="skill-tag">Scikit-learn</span>
-                    <span class="skill-tag">XGBoost</span>
-                    <span class="skill-tag">Transformers</span>
-                    <span class="skill-tag">MLOps</span>
-                    <span class="skill-tag">Model Deployment</span>
-                    <span class="skill-tag">A/B Testing</span>
-                    <span class="skill-tag">Statistical Modeling</span>
-                    <span class="skill-tag">Feature Engineering</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3><i class="fas fa-cloud"></i> Cloud & Big Data</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">AWS (SageMaker, S3, Lambda)</span>
-                    <span class="skill-tag">Google Cloud Platform (GCP)</span>
-                    <span class="skill-tag">BigQuery</span>
-                    <span class="skill-tag">Snowflake</span>
-                    <span class="skill-tag">Databricks</span>
-                    <span class="skill-tag">Apache Spark</span>
-                    <span class="skill-tag">Real-time Analytics</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3><i class="fas fa-cogs"></i> Data Engineering & Tools</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">dbt</span>
-                    <span class="skill-tag">Apache Airflow</span>
-                    <span class="skill-tag">Docker</span>
-                    <span class="skill-tag">PostgreSQL</span>
-                    <span class="skill-tag">Tableau</span>
-                    <span class="skill-tag">Looker</span>
-                    <span class="skill-tag">Pandas</span>
-                    <span class="skill-tag">NumPy</span>
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">Linux</span>
-                    <span class="skill-tag">ETL/ELT</span>
-                    <span class="skill-tag">Data Pipelines</span>
-                    <span class="skill-tag">Business Intelligence</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="modern-section">
-        <h2 class="section-title">Key Projects</h2>
-        
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-content">
-                    <h3 class="project-title">Expansive Insights: Analyzing Developer ChatGPT Interactions</h3>
-                    <p class="project-description">
-                        Capstone project analyzing 107,000 developer interactions with ChatGPT to understand GenAI's impact on developer productivity.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Data Analysis</span>
-                        <span class="tech-tag">NLP</span>
-                        <span class="tech-tag">Statistical Analysis</span>
-                    </div>
-                    <ul class="job-achievements">
-                        <li>Processed 107,000 developer interactions, ensuring data integrity with advanced filtering and deduplication</li>
-                        <li>Identified 16 single-turn and 8 multi-turn interaction types, illuminating GenAI's developer productivity impact</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-content">
-                    <h3 class="project-title">Mini-GPT: Simplistic Transformers Implementation</h3>
-                    <p class="project-description">
-                        Built and evaluated a Transformer-based language model from scratch for text generation using the Tiny Shakespeare dataset.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">Transformers</span>
-                        <span class="tech-tag">Deep Learning</span>
-                        <span class="tech-tag">NLP</span>
-                    </div>
-                    <ul class="job-achievements">
-                        <li>Implemented attention mechanisms and transformer architecture from first principles</li>
-                        <li>Trained model on Shakespeare text corpus for character-level text generation</li>
-                    </ul>
+                    <span class="skill-tag">Bash</span>
                 </div>
             </div>
         </div>
@@ -296,42 +414,47 @@
 
     <!-- Publications -->
     <section class="modern-section">
-        <h2 class="section-title">Publications</h2>
-        
-        <div class="experience-grid">
+        <div class="section-container">
+            <h2 class="section-title">Publications</h2>
+            <p class="section-subtitle"># peer-reviewed research</p>
+        </div>
+
+        <div class="experience-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <h3 class="job-title">Peer-to-peer Knowledge Sharing Platform for farmers with auto-recommendation feature</h3>
-                        <p class="company-name">IEEE SmartTechCon 2017</p>
+                        <div class="job-title">Peer-to-peer Knowledge Sharing Platform for Farmers with Auto-Recommendation Feature</div>
+                        <div class="company-name">IEEE SmartTechCon 2017</div>
                     </div>
                     <span class="job-duration">2017</span>
                 </div>
-                <ul class="job-achievements">
-                    <li><strong>DOI:</strong> <a href="https://doi.org/10.1109/SmartTechCon.2017.8358498" target="_blank" style="color: var(--primary-blue);">10.1109/SmartTechCon.2017.8358498</a></li>
-                    <li>Developed recommendation system for agricultural knowledge sharing platform</li>
-                </ul>
+                <div class="card-body-simple">
+                    <ul class="job-achievements">
+                        <li><strong style="color: var(--color-amber);">DOI:</strong> <a href="https://doi.org/10.1109/SmartTechCon.2017.8358498" target="_blank" class="pub-doi">10.1109/SmartTechCon.2017.8358498</a></li>
+                        <li>Developed recommendation system for agricultural knowledge sharing platform</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Call to Action -->
     <section class="modern-section" style="text-align: center;">
-        <h2 class="section-title">Ready to Collaborate?</h2>
-        <p class="section-subtitle">
-            Let's discuss how my experience in data science and analytics can contribute to your team's success.
-        </p>
-        <div class="contact-buttons">
-            <a href="mailto:pulkitsaxena14@gmail.com" class="btn-primary">
-                <i class="fas fa-envelope"></i> Get In Touch
-            </a>
-            <a href="projects.html" class="btn-secondary">
-                <i class="fas fa-project-diagram"></i> View Projects
-            </a>
+        <div class="section-container">
+            <h2 class="section-title" style="text-align: center;">Ready to Collaborate?</h2>
+            <p class="section-subtitle" style="text-align: center; margin-bottom: 2rem;"># let's build something impactful together</p>
+            <div class="contact-buttons" style="justify-content: center;">
+                <a href="mailto:pulkitsaxena14@gmail.com" class="btn-primary">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </a>
+                <a href="projects.html" class="btn-secondary">
+                    <i class="fas fa-terminal"></i> View Projects
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Modern Footer -->
+    <!-- Footer -->
     <footer class="modern-footer">
         <div class="footer-content">
             <div class="social-links">
@@ -345,36 +468,31 @@
                     <i class="fab fa-github"></i>
                 </a>
             </div>
-            <p>&copy; 2024 <span itemprop="name">Pulkit Saxena</span>. Crafted with passion for data science.</p>
+            <p>&copy; 2025 <span itemprop="name">Pulkit Saxena</span>. Built with terminal energy.</p>
         </div>
     </footer>
 
     <script>
         function toggleTheme() {
             const html = document.documentElement;
-            const themeIcon = document.getElementById('theme-icon');
             const themeText = document.getElementById('theme-text');
-            
-            if (html.dataset.theme === 'light') {
-                html.dataset.theme = 'dark';
-                themeIcon.textContent = '☀️';
-                themeText.textContent = 'Light Mode';
-                localStorage.setItem('theme', 'dark');
-            } else {
+
+            if (html.dataset.theme === 'dark') {
                 html.dataset.theme = 'light';
-                themeIcon.textContent = '🌙';
-                themeText.textContent = 'Dark Mode';
+                themeText.textContent = '[theme: light]';
                 localStorage.setItem('theme', 'light');
+            } else {
+                html.dataset.theme = 'dark';
+                themeText.textContent = '[theme: dark]';
+                localStorage.setItem('theme', 'dark');
             }
         }
 
-        // Initialize theme from localStorage
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        document.documentElement.dataset.theme = savedTheme;
-        if (savedTheme === 'dark') {
-            document.getElementById('theme-icon').textContent = '☀️';
-            document.getElementById('theme-text').textContent = 'Light Mode';
-        }
+        (function() {
+            const saved = document.documentElement.dataset.theme;
+            const btn = document.getElementById('theme-text');
+            if (btn) btn.textContent = saved === 'dark' ? '[theme: dark]' : '[theme: light]';
+        })();
     </script>
 </body>
 
