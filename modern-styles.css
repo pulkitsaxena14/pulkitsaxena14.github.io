@@ -102,10 +102,6 @@ body::before {
    THEME TOGGLE
    ============================================= */
 .theme-toggle {
-    position: fixed;
-    top: 13px;
-    right: 20px;
-    z-index: 1001;
     background: var(--color-bg-card);
     border: 1px solid var(--color-border);
     border-radius: 50%;
@@ -116,6 +112,7 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     transition: border-color 0.2s ease, color 0.2s ease, transform 0.3s ease, background 0.2s ease;
     font-size: 0.95rem;
     color: var(--color-text-secondary);
@@ -237,11 +234,10 @@ body::before {
    HERO
    ============================================= */
 .modern-header {
-    min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding-top: 60px;
+    padding-top: 120px;
+    padding-bottom: 100px;
     background: var(--color-bg-primary);
     position: relative;
     z-index: 1;
@@ -1418,25 +1414,44 @@ body::before {
 @media (max-width: 768px) {
     .nav-container {
         padding: 0 1rem;
-        padding-right: 130px;
     }
 
     .nav-links {
-        gap: 0.25rem;
+        gap: 0.2rem;
     }
 
     .nav-link {
-        padding: 5px 10px;
+        padding: 5px 9px;
         font-size: 0.78rem;
     }
 
     .nav-brand {
         font-size: 0.85rem;
+        white-space: nowrap;
     }
 
     .nav-avatar {
-        width: 26px;
-        height: 26px;
+        display: none;
+    }
+
+    .download-btn-nav {
+        padding: 7px 10px;
+        min-width: 34px;
+        justify-content: center;
+    }
+
+    .btn-label {
+        display: none;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+    }
+
+    .hero-cta .btn-primary,
+    .hero-cta .btn-secondary {
+        width: 100%;
+        justify-content: center;
     }
 
     .hero-name {
@@ -1444,10 +1459,9 @@ body::before {
     }
 
     .theme-toggle {
-        top: 14px;
-        right: 10px;
-        font-size: 0.72rem;
-        padding: 6px 10px;
+        width: 32px;
+        height: 32px;
+        font-size: 0.82rem;
     }
 
     .experience-header {
@@ -1488,18 +1502,14 @@ body::before {
 }
 
 @media (max-width: 480px) {
-    .nav-container {
-        padding-right: 110px;
-    }
-
-    .theme-toggle {
-        font-size: 0.68rem;
-        padding: 5px 8px;
-    }
-
     .nav-link {
-        padding: 4px 8px;
+        padding: 4px 7px;
         font-size: 0.72rem;
+    }
+
+    .modern-header {
+        padding-top: 90px;
+        padding-bottom: 60px;
     }
 
     .hero-name {
@@ -1508,5 +1518,19 @@ body::before {
 
     .hero-stats-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-stat-card {
+        padding: 1rem 0.75rem;
+    }
+
+    .hero-stat-label {
+        font-size: 0.68rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .nav-brand {
+        display: none;
     }
 }

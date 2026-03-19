@@ -140,10 +140,6 @@
 
 <body itemscope itemtype="https://schema.org/Person">
     <!-- Theme Toggle -->
-    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-        <i class="fas fa-moon" id="theme-icon"></i>
-    </button>
-
     <!-- Navigation -->
     <nav class="modern-nav">
         <div class="nav-container">
@@ -153,8 +149,11 @@
                 <li><a href="resume.html" class="nav-link">Experience</a></li>
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
                 <li><a href="resume.pdf" download="Pulkit_Saxena_Resume.pdf" class="nav-link download-btn-nav">
-                    <i class="fas fa-download"></i> Resume
+                    <i class="fas fa-download"></i><span class="btn-label"> Resume</span>
                 </a></li>
+                <li><button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button></li>
             </ul>
         </div>
     </nav>
@@ -191,7 +190,7 @@
                     </div>
                     <div class="hero-stat-card">
                         <div class="hero-stat-value">40%</div>
-                        <div class="hero-stat-label">MoM growth led</div>
+                        <div class="hero-stat-label">MoM growth</div>
                     </div>
                 </div>
             </div>
