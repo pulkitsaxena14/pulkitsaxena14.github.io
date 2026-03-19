@@ -17,8 +17,8 @@
     <!-- Google Fonts — essential weights only, non-render-blocking -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 
     <!-- Font Awesome — non-render-blocking -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous">
@@ -153,19 +153,19 @@
 <body itemscope itemtype="https://schema.org/Person">
     <!-- Theme Toggle -->
     <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-        <span id="theme-text">[theme: dark]</span>
+        <i class="fas fa-moon" id="theme-icon"></i>
     </button>
 
     <!-- Navigation -->
     <nav class="modern-nav">
         <div class="nav-container">
-            <a href="/" class="nav-brand">pulkit-saxena</a>
+            <a href="/" class="nav-brand">Pulkit Saxena</a>
             <ul class="nav-links">
-                <li><a href="/" class="nav-link">about</a></li>
-                <li><a href="resume.html" class="nav-link">experience</a></li>
-                <li><a href="projects.html" class="nav-link active">projects</a></li>
+                <li><a href="/" class="nav-link">About</a></li>
+                <li><a href="resume.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
                 <li><a href="resume.pdf" download="Pulkit_Saxena_Resume.pdf" class="nav-link download-btn-nav">
-                    <i class="fas fa-download"></i> resume
+                    <i class="fas fa-download"></i> Resume
                 </a></li>
             </ul>
         </div>
@@ -174,23 +174,10 @@
     <!-- Page Header -->
     <div class="page-header">
         <div class="header-content" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
-            <div class="terminal-window">
-                <div class="terminal-titlebar">
-                    <span class="terminal-dot red"></span>
-                    <span class="terminal-dot amber"></span>
-                    <span class="terminal-dot green"></span>
-                    <span class="terminal-title">projects/</span>
-                </div>
-                <div class="terminal-body" style="padding: 1rem 1.5rem;">
-                    <div class="terminal-line">
-                        <span class="terminal-prompt">$</span>
-                        <span class="terminal-cmd">ls ./projects/</span>
-                    </div>
-                    <div class="terminal-output" style="margin-top: 0.25rem; font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-text-secondary);">
-                        anomaly_detection.py &nbsp; research_analytics.py &nbsp; risk_simulation.py<br>
-                        credit_risk_models.py &nbsp; chatgpt_analysis.py &nbsp; mini_gpt.py &nbsp; crm_system.py
-                    </div>
-                </div>
+            <div class="page-banner">
+                <div class="page-banner-label">Projects</div>
+                <h1 class="page-banner-title">Portfolio</h1>
+                <p class="page-banner-sub">Production Systems &amp; Applied Research</p>
             </div>
         </div>
     </div>
@@ -199,7 +186,7 @@
     <section class="modern-section">
         <div class="section-container">
             <h1 class="section-title">Featured Projects</h1>
-            <p class="section-subtitle"># production systems &amp; applied research</p>
+            <p class="section-subtitle">Production Systems &amp; Applied Research</p>
         </div>
 
         <div class="projects-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
@@ -207,10 +194,7 @@
             <!-- Anomaly Detection — NEW, first card -->
             <div class="project-card">
                 <div class="project-header">
-                    <span class="terminal-dot red" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="terminal-dot amber" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="terminal-dot green" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="project-filename">anomaly_detection.py</span>
+                    <span class="project-category-chip">Production · ML</span>
                 </div>
                 <div class="project-content">
                     <div class="project-title">Vendor Invoice Anomaly Detection System</div>
@@ -227,7 +211,7 @@
                         <span class="tech-tag">MLflow</span>
                         <span class="tech-tag">Docker</span>
                     </div>
-                    <div class="project-impact">$ echo "Impact: $50K/year cost savings @ University of Rochester"</div>
+                    <div class="project-impact"><i class="fas fa-arrow-trend-up"></i> $50K/year cost savings at University of Rochester</div>
                     <ul class="job-achievements">
                         <li>Hybrid rule-based + Isolation Forest pipeline with automated alerting</li>
                         <li>SQLAlchemy ORM + Alembic for schema evolution and data lineage</li>
@@ -240,10 +224,7 @@
             <!-- Research Analytics Platform -->
             <div class="project-card">
                 <div class="project-header">
-                    <span class="terminal-dot red" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="terminal-dot amber" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="terminal-dot green" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="project-filename">research_analytics.py</span>
+                    <span class="project-category-chip">Production · Data Engineering</span>
                 </div>
                 <div class="project-content">
                     <div class="project-title">Research Analytics Platform</div>
@@ -259,7 +240,7 @@
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">LLMs</span>
                     </div>
-                    <div class="project-impact">$ echo "Impact: +20% research media coverage · 800GB+ processed"</div>
+                    <div class="project-impact"><i class="fas fa-arrow-trend-up"></i> +20% research media coverage · 800GB+ data processed</div>
                     <ul class="job-achievements">
                         <li>Processed 800GB+ institutional data for strategic decision-making</li>
                         <li>Integrated LLMs to automate 30% of data preparation tasks</li>
@@ -272,10 +253,7 @@
             <!-- Risk Strategy Simulation -->
             <div class="project-card">
                 <div class="project-header">
-                    <span class="terminal-dot red" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="terminal-dot amber" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="terminal-dot green" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="project-filename">risk_simulation.py</span>
+                    <span class="project-category-chip">Production · Risk Analytics</span>
                 </div>
                 <div class="project-content">
                     <div class="project-title">Risk Strategy Simulation Tool</div>
@@ -290,7 +268,7 @@
                         <span class="tech-tag">Databricks</span>
                         <span class="tech-tag">SAS→Python</span>
                     </div>
-                    <div class="project-impact">$ echo "Impact: +40% productivity · -75% investigation time"</div>
+                    <div class="project-impact"><i class="fas fa-arrow-trend-up"></i> +40% team productivity · 75% reduction in investigation time</div>
                     <ul class="job-achievements">
                         <li>Automated risk strategy simulations end-to-end</li>
                         <li>RCA-inclusive alerts for policy deviation detection</li>
@@ -302,10 +280,7 @@
             <!-- XGBoost Credit Risk Models -->
             <div class="project-card">
                 <div class="project-header">
-                    <span class="terminal-dot red" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="terminal-dot amber" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="terminal-dot green" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="project-filename">credit_risk_models.py</span>
+                    <span class="project-category-chip">Production · Fintech ML</span>
                 </div>
                 <div class="project-content">
                     <div class="project-title">XGBoost Credit Risk Models</div>
@@ -321,7 +296,7 @@
                         <span class="tech-tag">PostgreSQL</span>
                         <span class="tech-tag">Airflow</span>
                     </div>
-                    <div class="project-impact">$ echo "Impact: +40% MoM growth · ₹5.2M revenue identified"</div>
+                    <div class="project-impact"><i class="fas fa-arrow-trend-up"></i> +40% MoM credit disbursal growth · ₹5.2M revenue identified</div>
                     <ul class="job-achievements">
                         <li>Led cross-functional teams to 40% MoM credit disbursal growth</li>
                         <li>XGBoost models with rigorous A/B testing across 4,000+ customers</li>
@@ -334,10 +309,7 @@
             <!-- Expansive Insights -->
             <div class="project-card">
                 <div class="project-header">
-                    <span class="terminal-dot red" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="terminal-dot amber" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="terminal-dot green" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="project-filename">chatgpt_analysis.py</span>
+                    <span class="project-category-chip">Research · NLP</span>
                 </div>
                 <div class="project-content">
                     <div class="project-title">Expansive Insights: Developer ChatGPT Analysis</div>
@@ -363,10 +335,7 @@
             <!-- Mini-GPT -->
             <div class="project-card">
                 <div class="project-header">
-                    <span class="terminal-dot red" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="terminal-dot amber" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="terminal-dot green" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="project-filename">mini_gpt.py</span>
+                    <span class="project-category-chip">Research · Deep Learning</span>
                 </div>
                 <div class="project-content">
                     <div class="project-title">Mini-GPT: Transformer Implementation</div>
@@ -391,10 +360,7 @@
             <!-- CRM System -->
             <div class="project-card">
                 <div class="project-header">
-                    <span class="terminal-dot red" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="terminal-dot amber" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="terminal-dot green" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="project-filename">crm_system.py</span>
+                    <span class="project-category-chip">Production · Platform</span>
                 </div>
                 <div class="project-content">
                     <div class="project-title">Enterprise CRM System</div>
@@ -402,6 +368,7 @@
                         Built a comprehensive CRM at RedCarpetUp serving 500k+ users with KYC image processing,
                         audit trail database schemas, and card management for 100k MAU.
                     </p>
+                    <div class="project-impact"><i class="fas fa-arrow-trend-up"></i> 80% of KYC verification automated · 100K monthly active users</div>
                     <div class="project-tech">
                         <span class="tech-tag">Flask</span>
                         <span class="tech-tag">PostgreSQL</span>
@@ -424,7 +391,7 @@
     <section class="modern-section">
         <div class="section-container">
             <h2 class="section-title">Impact &amp; Results</h2>
-            <p class="section-subtitle"># quantifiable outcomes from production systems</p>
+            <p class="section-subtitle">Quantifiable Outcomes from Production Systems</p>
         </div>
 
         <div class="metrics-grid">
@@ -444,9 +411,9 @@
                 <div class="metric-desc">Via RCA-inclusive alert system at T-Mobile risk management</div>
             </div>
             <div class="metric-card">
-                <div class="metric-value">800GB+</div>
-                <div class="metric-label">data processed</div>
-                <div class="metric-desc">Research analytics platform at University of Rochester</div>
+                <div class="metric-value">80%</div>
+                <div class="metric-label">KYC automated</div>
+                <div class="metric-desc">Image processing pipeline for document verification at RedCarpetUp</div>
             </div>
             <div class="metric-card">
                 <div class="metric-value">500K+</div>
@@ -465,31 +432,32 @@
     <section class="modern-section">
         <div class="section-container">
             <h2 class="section-title">Research &amp; Publications</h2>
-            <p class="section-subtitle"># peer-reviewed work</p>
+            <p class="section-subtitle">Peer-Reviewed Work</p>
         </div>
 
-        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
-            <div class="publication-card">
-                <div class="project-header" style="padding: 0.75rem 0; border-bottom: none; background: none; margin-bottom: 0.75rem;">
-                    <span class="terminal-dot red" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="terminal-dot amber" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="terminal-dot green" style="width:10px;height:10px;flex-shrink:0;"></span>
-                    <span class="project-filename">ieee_2017.bib</span>
+        <div style="max-width: 960px; margin: 0 auto; padding: 0 2rem;">
+            <div class="pub-card">
+                <div class="pub-meta">
+                    <div class="pub-year">2017</div>
+                    <span class="pub-badge"><i class="fas fa-certificate"></i> Peer Reviewed</span>
+                    <div class="pub-conference">IEEE SmartTechCon</div>
+                    <div class="pub-conf-location">Bangalore, India</div>
                 </div>
-                <div class="pub-title">Peer-to-peer Knowledge Sharing Platform for Farmers with Auto-Recommendation Feature</div>
-                <div class="pub-venue">IEEE SmartTechCon 2017</div>
-                <p style="color: var(--color-text-secondary); font-size: 0.88rem; line-height: 1.6; margin-bottom: 1rem;">
-                    Published research on developing an intelligent recommendation system for agricultural knowledge sharing,
-                    enabling farmers to access relevant information and best practices.
-                </p>
-                <div class="project-tech" style="margin-bottom: 1rem;">
-                    <span class="tech-tag">Recommendation Systems</span>
-                    <span class="tech-tag">Machine Learning</span>
-                    <span class="tech-tag">Agricultural Tech</span>
+                <div class="pub-body">
+                    <div class="pub-title">Peer-to-peer Knowledge Sharing Platform for Farmers with Auto-Recommendation Feature</div>
+                    <p class="pub-abstract">
+                        Developed an intelligent recommendation system for agricultural knowledge sharing, enabling farmers to access relevant information and best practices through a peer-to-peer platform with automated suggestion capabilities.
+                    </p>
+                    <div class="project-tech" style="margin-bottom: 1.25rem;">
+                        <span class="tech-tag">Recommendation Systems</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Agricultural Tech</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <a href="https://doi.org/10.1109/SmartTechCon.2017.8358498" class="pub-doi-btn" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> DOI: 10.1109/SmartTechCon.2017.8358498
+                    </a>
                 </div>
-                <a href="https://doi.org/10.1109/SmartTechCon.2017.8358498" class="pub-doi" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> DOI: 10.1109/SmartTechCon.2017.8358498
-                </a>
             </div>
         </div>
     </section>
@@ -498,13 +466,13 @@
     <section class="modern-section" style="text-align: center;">
         <div class="section-container">
             <h2 class="section-title" style="text-align: center;">Let's Build Something</h2>
-            <p class="section-subtitle" style="text-align: center; margin-bottom: 2rem;"># open to ml engineering &amp; data science opportunities</p>
+            <p class="section-subtitle" style="text-align: center; margin-bottom: 2rem;">Open to ML Engineering &amp; Data Science Roles</p>
             <div class="contact-buttons" style="justify-content: center;">
                 <a class="btn-primary js-email-link" style="cursor:pointer">
                     <i class="fas fa-envelope"></i> Start a Conversation
                 </a>
                 <a href="resume.html" class="btn-secondary">
-                    <i class="fas fa-terminal"></i> View Full Experience
+                    <i class="fas fa-layer-group"></i> View Full Experience
                 </a>
             </div>
         </div>
@@ -524,30 +492,28 @@
                     <i class="fab fa-github"></i>
                 </a>
             </div>
-            <p>&copy; 2025 <span itemprop="name">Pulkit Saxena</span>. Built with terminal energy.</p>
+            <p>&copy; 2025 <span itemprop="name">Pulkit Saxena</span>. Data Scientist &amp; ML Engineer · Rochester, NY</p>
         </div>
     </footer>
 
     <script>
         function toggleTheme() {
             const html = document.documentElement;
-            const themeText = document.getElementById('theme-text');
-
+            const icon = document.getElementById('theme-icon');
             if (html.dataset.theme === 'dark') {
                 html.dataset.theme = 'light';
-                themeText.textContent = '[theme: light]';
+                if (icon) icon.className = 'fas fa-sun';
                 localStorage.setItem('theme', 'light');
             } else {
                 html.dataset.theme = 'dark';
-                themeText.textContent = '[theme: dark]';
+                if (icon) icon.className = 'fas fa-moon';
                 localStorage.setItem('theme', 'dark');
             }
         }
 
         (function() {
-            const saved = document.documentElement.dataset.theme;
-            const btn = document.getElementById('theme-text');
-            if (btn) btn.textContent = saved === 'dark' ? '[theme: dark]' : '[theme: light]';
+            const icon = document.getElementById('theme-icon');
+            if (icon) icon.className = document.documentElement.dataset.theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
         })();
     </script>
     <script>

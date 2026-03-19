@@ -17,12 +17,15 @@
     <!-- Google Fonts — essential weights only, non-render-blocking -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 
     <!-- Font Awesome — non-render-blocking -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous"></noscript>
+
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
 
     <!-- Modern Styles -->
     <link rel="stylesheet" href="modern-styles.css">
@@ -40,7 +43,7 @@
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://pulkitsaxena14.github.io/resume.html">
     <meta property="og:title" content="Experience — Pulkit Saxena | ML Engineer & Data Scientist">
-    <meta property="og:description" content="5+ years across fintech, telecom, and research. University of Rochester · T-Mobile · RedCarpetUp (YC S15). MS Data Science, 3.87 GPA. IEEE-published.">
+    <meta property="og:description" content="5+ years across fintech, telecom, and research. University of Rochester · T-Mobile · RedCarpetUp (YC S15). MS Data Science. IEEE-published.">
     <meta property="og:image" content="https://pulkitsaxena14.github.io/profile_headshot.jpg">
     <meta property="og:image:alt" content="Pulkit Saxena — ML Engineer & Data Scientist">
     <meta property="og:site_name" content="Pulkit Saxena">
@@ -48,7 +51,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Experience — Pulkit Saxena | ML Engineer & Data Scientist">
-    <meta name="twitter:description" content="5+ years across fintech, telecom, and research. University of Rochester · T-Mobile · RedCarpetUp (YC S15). MS Data Science, 3.87 GPA.">
+    <meta name="twitter:description" content="5+ years across fintech, telecom, and research. University of Rochester · T-Mobile · RedCarpetUp (YC S15). MS Data Science.">
     <meta name="twitter:image" content="https://pulkitsaxena14.github.io/profile_headshot.jpg">
 
     <!-- Structured Data -->
@@ -72,7 +75,7 @@
             {
                 "@type": "EducationalOrganization",
                 "name": "Rochester Institute of Technology",
-                "description": "Master of Science in Data Science, GPA 3.87/4.0, 2022–2024"
+                "description": "Master of Science in Data Science, 2022–2024"
             },
             {
                 "@type": "EducationalOrganization",
@@ -105,44 +108,31 @@
 <body itemscope itemtype="https://schema.org/Person">
     <!-- Theme Toggle -->
     <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-        <span id="theme-text">[theme: dark]</span>
+        <i class="fas fa-moon" id="theme-icon"></i>
     </button>
 
     <!-- Navigation -->
     <nav class="modern-nav">
         <div class="nav-container">
-            <a href="/" class="nav-brand">pulkit-saxena</a>
+            <a href="/" class="nav-brand">Pulkit Saxena</a>
             <ul class="nav-links">
-                <li><a href="/" class="nav-link">about</a></li>
-                <li><a href="resume.html" class="nav-link active">experience</a></li>
-                <li><a href="projects.html" class="nav-link">projects</a></li>
+                <li><a href="/" class="nav-link">About</a></li>
+                <li><a href="resume.html" class="nav-link active">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
                 <li><a href="resume.pdf" download="Pulkit_Saxena_Resume.pdf" class="nav-link download-btn-nav">
-                    <i class="fas fa-download"></i> resume
+                    <i class="fas fa-download"></i> Resume
                 </a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Page Header — compact terminal -->
+    <!-- Page Header -->
     <div class="page-header">
         <div class="header-content" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
-            <div class="terminal-window">
-                <div class="terminal-titlebar">
-                    <span class="terminal-dot red"></span>
-                    <span class="terminal-dot amber"></span>
-                    <span class="terminal-dot green"></span>
-                    <span class="terminal-title">resume.md</span>
-                </div>
-                <div class="terminal-body" style="padding: 1rem 1.5rem;">
-                    <div class="terminal-line">
-                        <span class="terminal-prompt">$</span>
-                        <span class="terminal-cmd">cat resume.md</span>
-                    </div>
-                    <div class="terminal-output" style="margin-top: 0.25rem;">
-                        <h1 style="display:inline;font:inherit;margin:0;padding:0">Pulkit Saxena</h1> — ML Engineer &amp; Data Scientist<br>
-                        <span style="color: var(--color-text-muted); font-family: var(--font-mono); font-size: 0.85rem;">5+ yrs · fintech · telecom · research · MS Data Science (RIT) · IEEE-published</span>
-                    </div>
-                </div>
+            <div class="page-banner">
+                <div class="page-banner-label">Experience</div>
+                <h1 class="page-banner-title">Pulkit Saxena</h1>
+                <p class="page-banner-sub">ML Engineer &amp; Data Scientist · 5+ yrs · Fintech · Telecom · Research</p>
             </div>
         </div>
     </div>
@@ -151,132 +141,177 @@
     <section class="modern-section">
         <div class="section-container">
             <h2 class="section-title">Professional Experience</h2>
-            <p class="section-subtitle"># production engineering across three industries</p>
+            <p class="section-subtitle">Production Engineering Across Three Industries</p>
         </div>
 
-        <div class="experience-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+        <div class="timeline">
+
             <!-- University of Rochester -->
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div>
-                        <div class="job-title" itemprop="jobTitle">Data Scientist</div>
-                        <div class="company-name" itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
-                            <span itemprop="name">University of Rochester</span> · Rochester, NY
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-connector"></div>
+                </div>
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <div>
+                            <div class="timeline-company" itemprop="worksFor" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">University of Rochester</span></div>
+                            <div class="timeline-role" itemprop="jobTitle">Data Scientist</div>
+                        </div>
+                        <div class="timeline-meta">
+                            <span class="timeline-duration">Aug 2024 – Present</span>
+                            <span class="timeline-location">Rochester, NY</span>
                         </div>
                     </div>
-                    <span class="job-duration">Aug 2024 – Present</span>
-                </div>
-                <div class="card-body">
-                    <div class="line-numbers">
-                        <span>1</span><span>2</span><span>3</span><span>4</span>
-                        <span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
-                    </div>
-                    <ul class="job-achievements">
-                        <li>Built research analytics platform processing 800GB+ data using BigQuery, Python, and SQL for data-driven hiring and impact assessments</li>
-                        <li>Integrated Large Language Models (LLMs) into data pipelines, improving data preparation efficiency by 30%</li>
+                    <div class="timeline-stat">$50K / yr saved</div>
+                    <ul class="timeline-bullets">
                         <li>Implemented hybrid rule-based + Isolation Forest anomaly detection for vendor invoices, saving $50K/year</li>
-                        <li>Designed SQLAlchemy ORM models and Alembic migration workflows for schema evolution</li>
-                        <li>Built GitLab MLOps Python Client with MLflow integration for experiment tracking and deployment</li>
-                        <li>Dockerized Dash dashboards for production deployment on Posit Connect</li>
-                        <li>Configured dbt for data transformation, documentation, and MLOps workflows</li>
-                        <li>Applied Generative AI and prompt engineering for automated code generation and workflow optimization</li>
-                        <li>Developed interactive Tableau dashboards, increasing research focus and media coverage by 20%</li>
+                        <li>Built research analytics platform processing 800GB+ institutional data for data-driven hiring and impact assessments</li>
+                        <li>Integrated LLMs into data pipelines, improving data preparation efficiency by 30%</li>
                     </ul>
+                    <div class="timeline-tech">
+                        <span class="timeline-tech-chip">BigQuery</span>
+                        <span class="timeline-tech-chip">Python</span>
+                        <span class="timeline-tech-chip">dbt</span>
+                        <span class="timeline-tech-chip">MLflow</span>
+                        <span class="timeline-tech-chip">Isolation Forest</span>
+                        <span class="timeline-tech-chip">Docker</span>
+                        <span class="timeline-tech-chip">LLMs</span>
+                    </div>
                 </div>
             </div>
 
             <!-- T-Mobile -->
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div>
-                        <div class="job-title">Credit Risk Management (Data Science) Intern</div>
-                        <div class="company-name">T-Mobile, USA · Overland Park, KS</div>
-                    </div>
-                    <span class="job-duration">May 2023 – Aug 2023</span>
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-connector"></div>
                 </div>
-                <div class="card-body">
-                    <div class="line-numbers">
-                        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <div>
+                            <div class="timeline-company">T-Mobile USA</div>
+                            <div class="timeline-role">Credit Risk Management (Data Science) Intern</div>
+                        </div>
+                        <div class="timeline-meta">
+                            <span class="timeline-duration">May 2023 – Aug 2023</span>
+                            <span class="timeline-location">Overland Park, KS</span>
+                        </div>
                     </div>
-                    <ul class="job-achievements">
-                        <li>Engineered an automated Risk Strategy Simulation Tool, boosting team productivity by 40% using Python/Pandas</li>
-                        <li>Conducted in-depth analysis of a 35% policy deviation using Snowflake, Databricks, and Pandas</li>
+                    <div class="timeline-stat">75% faster</div>
+                    <ul class="timeline-bullets">
+                        <li>Engineered automated Risk Strategy Simulation Tool, boosting team productivity by 40%</li>
                         <li>Built RCA-inclusive alerts to detect policy deviations, reducing investigation time by 75%</li>
                         <li>Modernized legacy SAS pipeline to Python, enabling version control, reproducibility, and MLOps integration</li>
-                        <li>Delivered findings to senior risk leadership, influencing underwriting policy adjustments</li>
                     </ul>
+                    <div class="timeline-tech">
+                        <span class="timeline-tech-chip">Python</span>
+                        <span class="timeline-tech-chip">Snowflake</span>
+                        <span class="timeline-tech-chip">Databricks</span>
+                        <span class="timeline-tech-chip">Pandas</span>
+                        <span class="timeline-tech-chip">SAS Migration</span>
+                    </div>
                 </div>
             </div>
 
             <!-- RedCarpetUp Data Scientist -->
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div>
-                        <div class="job-title">Data Scientist</div>
-                        <div class="company-name">RedCarpetUp.com (YC S15) · New Delhi, India</div>
-                    </div>
-                    <span class="job-duration">Apr 2019 – Jan 2021</span>
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-connector"></div>
                 </div>
-                <div class="card-body">
-                    <div class="line-numbers">
-                        <span>1</span><span>2</span><span>3</span><span>4</span>
-                        <span>5</span><span>6</span><span>7</span><span>8</span>
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <div>
+                            <div class="timeline-company">RedCarpetUp.com (YC S15)</div>
+                            <div class="timeline-role">Data Scientist</div>
+                        </div>
+                        <div class="timeline-meta">
+                            <span class="timeline-duration">Apr 2019 – Jan 2021</span>
+                            <span class="timeline-location">New Delhi, India</span>
+                        </div>
                     </div>
-                    <ul class="job-achievements">
-                        <li>Led cross-functional teams of analysts and software engineers achieving 40% month-over-month credit disbursal growth</li>
+                    <div class="timeline-stat">500K+ users</div>
+                    <ul class="timeline-bullets">
                         <li>Owned end-to-end product development for credit risk assessment platform serving 500,000+ users</li>
-                        <li>Implemented XGBoost-based credit risk models with A/B testing across 4,000+ customers using statistical modeling</li>
-                        <li>Deployed ML models with Docker and Flask, ensuring scalable, reliable predictions and monitoring</li>
-                        <li>Conducted exploratory data analysis on 5TB customer data, identifying ₹5.2M revenue opportunities using PostgreSQL, Pandas</li>
-                        <li>Architected automated reporting systems using Looker and Airflow, boosting data analysis efficiency by 65%</li>
-                        <li>Mentored junior analysts and interns, establishing machine learning best practices and data science workflows</li>
-                        <li>Published insights and model performance metrics via internal BI dashboards used by executive leadership</li>
+                        <li>Implemented XGBoost-based credit risk models with A/B testing across 4,000+ customers</li>
+                        <li>Led cross-functional teams achieving 40% month-over-month credit disbursal growth</li>
                     </ul>
+                    <div class="timeline-tech">
+                        <span class="timeline-tech-chip">XGBoost</span>
+                        <span class="timeline-tech-chip">Python</span>
+                        <span class="timeline-tech-chip">Docker</span>
+                        <span class="timeline-tech-chip">Flask</span>
+                        <span class="timeline-tech-chip">PostgreSQL</span>
+                        <span class="timeline-tech-chip">Airflow</span>
+                        <span class="timeline-tech-chip">A/B Testing</span>
+                    </div>
                 </div>
             </div>
 
             <!-- RedCarpetUp Software Engineer -->
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div>
-                        <div class="job-title">Software Engineer</div>
-                        <div class="company-name">RedCarpetUp.com (YC S15) · New Delhi, India</div>
-                    </div>
-                    <span class="job-duration">Oct 2017 – Mar 2019</span>
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-connector"></div>
                 </div>
-                <div class="card-body">
-                    <div class="line-numbers">
-                        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <div>
+                            <div class="timeline-company">RedCarpetUp.com (YC S15)</div>
+                            <div class="timeline-role">Software Engineer</div>
+                        </div>
+                        <div class="timeline-meta">
+                            <span class="timeline-duration">Oct 2017 – Mar 2019</span>
+                            <span class="timeline-location">New Delhi, India</span>
+                        </div>
                     </div>
-                    <ul class="job-achievements">
-                        <li>Built a CRM system for 500,000+ users with Flask and PostgreSQL, streamlining data management and analytics</li>
-                        <li>Designed database schemas for user and agent activity tracking, enabling audit trails and compliance</li>
+                    <div class="timeline-stat">80% automated</div>
+                    <ul class="timeline-bullets">
+                        <li>Built CRM system for 500,000+ users with Flask and PostgreSQL, streamlining data management and analytics</li>
                         <li>Implemented image processing for KYC document verification, automating 80% of the process</li>
                         <li>Led team of 4–5 engineers and interns, owning sprint planning, code reviews, and delivery</li>
-                        <li>Set up and managed card upgrade process for 100,000 monthly active users, ensuring regulatory compliance</li>
                     </ul>
+                    <div class="timeline-tech">
+                        <span class="timeline-tech-chip">Flask</span>
+                        <span class="timeline-tech-chip">PostgreSQL</span>
+                        <span class="timeline-tech-chip">Python</span>
+                        <span class="timeline-tech-chip">REST APIs</span>
+                        <span class="timeline-tech-chip">Image Processing</span>
+                    </div>
                 </div>
             </div>
 
             <!-- Foodpost -->
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div>
-                        <div class="job-title">Full Stack Developer Intern</div>
-                        <div class="company-name">Foodpost · Gurugram, India</div>
-                    </div>
-                    <span class="job-duration">Jan 2016 – Mar 2016</span>
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-connector"></div>
                 </div>
-                <div class="card-body">
-                    <div class="line-numbers">
-                        <span>1</span><span>2</span>
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <div>
+                            <div class="timeline-company">Foodpost</div>
+                            <div class="timeline-role">Full Stack Developer Intern</div>
+                        </div>
+                        <div class="timeline-meta">
+                            <span class="timeline-duration">Jan 2016 – Mar 2016</span>
+                            <span class="timeline-location">Gurugram, India</span>
+                        </div>
                     </div>
-                    <ul class="job-achievements">
+                    <ul class="timeline-bullets">
                         <li>Developed RESTful APIs and performed database operations using PHP (Codeigniter) and SQL</li>
                         <li>Upgraded front-end (HTML5, CSS3, Bootstrap) and conducted load tests using jMeter</li>
                     </ul>
+                    <div class="timeline-tech">
+                        <span class="timeline-tech-chip">PHP</span>
+                        <span class="timeline-tech-chip">SQL</span>
+                        <span class="timeline-tech-chip">Bootstrap</span>
+                        <span class="timeline-tech-chip">jMeter</span>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -284,41 +319,21 @@
     <section class="modern-section">
         <div class="section-container">
             <h2 class="section-title">Education</h2>
-            <p class="section-subtitle"># academic background</p>
+            <p class="section-subtitle">Academic Background</p>
         </div>
 
-        <div class="experience-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div>
-                        <div class="job-title">Master of Science — Data Science</div>
-                        <div class="company-name" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
-                            <span itemprop="name">Rochester Institute of Technology</span>
-                        </div>
-                    </div>
-                    <span class="job-duration">Aug 2022 – May 2024</span>
-                </div>
-                <div class="card-body-simple">
-                    <ul class="job-achievements">
-                        <li><strong style="color: var(--color-amber);">CGPA:</strong> 3.87 / 4.0</li>
-                        <li><strong style="color: var(--color-amber);">Coursework:</strong> Machine Learning, Statistical Analysis, Big Data Analytics, Database Systems</li>
-                    </ul>
-                </div>
+        <div class="education-grid">
+            <div class="education-card">
+                <div class="edu-degree">M.S. Data Science</div>
+                <div class="edu-school" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization"><span itemprop="name">Rochester Institute of Technology</span></div>
+                <div class="edu-meta">Aug 2022 – May 2024</div>
+                <div class="edu-courses">Machine Learning · Statistical Analysis · Big Data Analytics · Database Systems</div>
             </div>
-
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div>
-                        <div class="job-title">Bachelor of Engineering — Computer Science</div>
-                        <div class="company-name">Visvesvaraya Technological University</div>
-                    </div>
-                    <span class="job-duration">Aug 2012 – May 2017</span>
-                </div>
-                <div class="card-body-simple">
-                    <ul class="job-achievements">
-                        <li><strong style="color: var(--color-amber);">Coursework:</strong> Data Structures, Algorithms, Database Management, Software Engineering</li>
-                    </ul>
-                </div>
+            <div class="education-card">
+                <div class="edu-degree">B.E. Computer Science</div>
+                <div class="edu-school">Visvesvaraya Technological University</div>
+                <div class="edu-meta">Aug 2012 – May 2017</div>
+                <div class="edu-courses">Data Structures · Algorithms · Database Management · Software Engineering</div>
             </div>
         </div>
     </section>
@@ -327,14 +342,14 @@
     <section class="modern-section">
         <div class="section-container">
             <h2 class="section-title">Technical Skills</h2>
-            <p class="section-subtitle"># technology stack</p>
+            <p class="section-subtitle">Technology Stack</p>
         </div>
 
         <div class="skills-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
             <div class="skill-category">
                 <div class="skill-category-header">
-                    <h3><i class="fas fa-brain"></i> AI &amp; ML</h3>
-                    <div class="skill-loadbar"><div class="skill-loadbar-fill"></div></div>
+                    <i class="devicon-scikitlearn-plain colored skill-category-icon"></i>
+                    <h3>AI &amp; ML</h3>
                 </div>
                 <div class="skill-tags">
                     <span class="skill-tag">LangChain</span>
@@ -349,8 +364,8 @@
 
             <div class="skill-category">
                 <div class="skill-category-header">
-                    <h3><i class="fas fa-database"></i> Data Engineering</h3>
-                    <div class="skill-loadbar"><div class="skill-loadbar-fill" style="width:88%"></div></div>
+                    <i class="devicon-apacheairflow-plain colored skill-category-icon"></i>
+                    <h3>Data Engineering</h3>
                 </div>
                 <div class="skill-tags">
                     <span class="skill-tag">dbt</span>
@@ -367,8 +382,8 @@
 
             <div class="skill-category">
                 <div class="skill-category-header">
-                    <h3><i class="fas fa-cloud"></i> Cloud &amp; Big Data</h3>
-                    <div class="skill-loadbar"><div class="skill-loadbar-fill" style="width:85%"></div></div>
+                    <i class="devicon-googlecloud-plain colored skill-category-icon"></i>
+                    <h3>Cloud &amp; Big Data</h3>
                 </div>
                 <div class="skill-tags">
                     <span class="skill-tag">GCP/BigQuery</span>
@@ -382,8 +397,8 @@
 
             <div class="skill-category">
                 <div class="skill-category-header">
-                    <h3><i class="fas fa-tools"></i> Infrastructure &amp; Tools</h3>
-                    <div class="skill-loadbar"><div class="skill-loadbar-fill" style="width:82%"></div></div>
+                    <i class="devicon-docker-plain colored skill-category-icon"></i>
+                    <h3>Infrastructure &amp; Tools</h3>
                 </div>
                 <div class="skill-tags">
                     <span class="skill-tag">Docker</span>
@@ -400,8 +415,8 @@
 
             <div class="skill-category">
                 <div class="skill-category-header">
-                    <h3><i class="fas fa-code"></i> Languages</h3>
-                    <div class="skill-loadbar"><div class="skill-loadbar-fill" style="width:95%"></div></div>
+                    <i class="devicon-python-plain colored skill-category-icon"></i>
+                    <h3>Languages</h3>
                 </div>
                 <div class="skill-tags">
                     <span class="skill-tag">Python</span>
@@ -418,23 +433,31 @@
     <section class="modern-section">
         <div class="section-container">
             <h2 class="section-title">Publications</h2>
-            <p class="section-subtitle"># peer-reviewed research</p>
+            <p class="section-subtitle">Peer-Reviewed Research</p>
         </div>
 
-        <div class="experience-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div>
-                        <div class="job-title">Peer-to-peer Knowledge Sharing Platform for Farmers with Auto-Recommendation Feature</div>
-                        <div class="company-name">IEEE SmartTechCon 2017</div>
-                    </div>
-                    <span class="job-duration">2017</span>
+        <div style="max-width: 960px; margin: 0 auto; padding: 0 2rem;">
+            <div class="pub-card">
+                <div class="pub-meta">
+                    <div class="pub-year">2017</div>
+                    <span class="pub-badge"><i class="fas fa-certificate"></i> Peer Reviewed</span>
+                    <div class="pub-conference">IEEE SmartTechCon</div>
+                    <div class="pub-conf-location">Bangalore, India</div>
                 </div>
-                <div class="card-body-simple">
-                    <ul class="job-achievements">
-                        <li><strong style="color: var(--color-amber);">DOI:</strong> <a href="https://doi.org/10.1109/SmartTechCon.2017.8358498" target="_blank" class="pub-doi">10.1109/SmartTechCon.2017.8358498</a></li>
-                        <li>Developed recommendation system for agricultural knowledge sharing platform</li>
-                    </ul>
+                <div class="pub-body">
+                    <div class="pub-title">Peer-to-peer Knowledge Sharing Platform for Farmers with Auto-Recommendation Feature</div>
+                    <p class="pub-abstract">
+                        Developed an intelligent recommendation system for agricultural knowledge sharing, enabling farmers to access relevant information and best practices through a peer-to-peer platform with automated suggestion capabilities.
+                    </p>
+                    <div class="project-tech" style="margin-bottom: 1.25rem;">
+                        <span class="tech-tag">Recommendation Systems</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Agricultural Tech</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <a href="https://doi.org/10.1109/SmartTechCon.2017.8358498" class="pub-doi-btn" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> DOI: 10.1109/SmartTechCon.2017.8358498
+                    </a>
                 </div>
             </div>
         </div>
@@ -444,13 +467,13 @@
     <section class="modern-section" style="text-align: center;">
         <div class="section-container">
             <h2 class="section-title" style="text-align: center;">Ready to Collaborate?</h2>
-            <p class="section-subtitle" style="text-align: center; margin-bottom: 2rem;"># let's build something impactful together</p>
+            <p class="section-subtitle" style="text-align: center; margin-bottom: 2rem;">Open to ML Engineering &amp; Data Science Roles</p>
             <div class="contact-buttons" style="justify-content: center;">
                 <a class="btn-primary js-email-link" style="cursor:pointer">
                     <i class="fas fa-envelope"></i> Get In Touch
                 </a>
                 <a href="projects.html" class="btn-secondary">
-                    <i class="fas fa-terminal"></i> View Projects
+                    <i class="fas fa-layer-group"></i> View Projects
                 </a>
             </div>
         </div>
@@ -470,30 +493,28 @@
                     <i class="fab fa-github"></i>
                 </a>
             </div>
-            <p>&copy; 2025 <span itemprop="name">Pulkit Saxena</span>. Built with terminal energy.</p>
+            <p>&copy; 2025 <span itemprop="name">Pulkit Saxena</span>. Data Scientist &amp; ML Engineer · Rochester, NY</p>
         </div>
     </footer>
 
     <script>
         function toggleTheme() {
             const html = document.documentElement;
-            const themeText = document.getElementById('theme-text');
-
+            const icon = document.getElementById('theme-icon');
             if (html.dataset.theme === 'dark') {
                 html.dataset.theme = 'light';
-                themeText.textContent = '[theme: light]';
+                if (icon) icon.className = 'fas fa-sun';
                 localStorage.setItem('theme', 'light');
             } else {
                 html.dataset.theme = 'dark';
-                themeText.textContent = '[theme: dark]';
+                if (icon) icon.className = 'fas fa-moon';
                 localStorage.setItem('theme', 'dark');
             }
         }
 
         (function() {
-            const saved = document.documentElement.dataset.theme;
-            const btn = document.getElementById('theme-text');
-            if (btn) btn.textContent = saved === 'dark' ? '[theme: dark]' : '[theme: light]';
+            const icon = document.getElementById('theme-icon');
+            if (icon) icon.className = document.documentElement.dataset.theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
         })();
     </script>
     <script>
